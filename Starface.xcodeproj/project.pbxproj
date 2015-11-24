@@ -1,0 +1,1451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1516F5A31AA66B1E00C70341 /* dSFMT.c in Sources */ = {isa = PBXBuildFile; fileRef = 1516F5A11AA66B1E00C70341 /* dSFMT.c */; };
+		1516F5C21AA66B4200C70341 /* kiss_fft.c in Sources */ = {isa = PBXBuildFile; fileRef = 1516F5A71AA66B4200C70341 /* kiss_fft.c */; };
+		1516F5C31AA66B4200C70341 /* kiss_fftnd.c in Sources */ = {isa = PBXBuildFile; fileRef = 1516F5A91AA66B4200C70341 /* kiss_fftnd.c */; };
+		1516F5C41AA66B4200C70341 /* kiss_fftndr.c in Sources */ = {isa = PBXBuildFile; fileRef = 1516F5AB1AA66B4200C70341 /* kiss_fftndr.c */; };
+		1516F5C51AA66B4200C70341 /* kiss_fftr.c in Sources */ = {isa = PBXBuildFile; fileRef = 1516F5AD1AA66B4200C70341 /* kiss_fftr.c */; };
+		1516F5C61AA66B4200C70341 /* kissf_fft.c in Sources */ = {isa = PBXBuildFile; fileRef = 1516F5AF1AA66B4200C70341 /* kissf_fft.c */; };
+		1516F5C71AA66B4200C70341 /* kissf_fftnd.c in Sources */ = {isa = PBXBuildFile; fileRef = 1516F5B11AA66B4200C70341 /* kissf_fftnd.c */; };
+		1516F5C81AA66B4200C70341 /* kissf_fftndr.c in Sources */ = {isa = PBXBuildFile; fileRef = 1516F5B31AA66B4200C70341 /* kissf_fftndr.c */; };
+		1516F5C91AA66B4200C70341 /* kissf_fftr.c in Sources */ = {isa = PBXBuildFile; fileRef = 1516F5B51AA66B4200C70341 /* kissf_fftr.c */; };
+		1516F5CA1AA66B4200C70341 /* SFMT.c in Sources */ = {isa = PBXBuildFile; fileRef = 1516F5BD1AA66B4200C70341 /* SFMT.c */; };
+		1516F5CB1AA66B4200C70341 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 1516F5C01AA66B4200C70341 /* sha1.c */; };
+		1516F5CD1AA66B7800C70341 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1516F5CC1AA66B7800C70341 /* libsqlite3.dylib */; };
+		1516F5DC1AA6D08F00C70341 /* ArtistsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1516F5DB1AA6D08F00C70341 /* ArtistsData.m */; };
+		1527CB081ABE98760040BA78 /* daniel_day-lewis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1527CB071ABE98760040BA78 /* daniel_day-lewis.jpg */; };
+		1545D59F1ABE521400F0897C /* milla_jovovich.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1545D59E1ABE521400F0897C /* milla_jovovich.jpg */; };
+		1545D5A11ABE521C00F0897C /* mila_kunis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1545D5A01ABE521C00F0897C /* mila_kunis.jpg */; };
+		15BEBE311AACFA630041077E /* adrien_brody.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBDF01AACFA630041077E /* adrien_brody.jpg */; };
+		15BEBE321AACFA630041077E /* al_pacino.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBDF11AACFA630041077E /* al_pacino.jpg */; };
+		15BEBE331AACFA630041077E /* anthony_hopkins.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBDF21AACFA630041077E /* anthony_hopkins.jpg */; };
+		15BEBE341AACFA630041077E /* ashton_kutcher.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBDF31AACFA630041077E /* ashton_kutcher.jpg */; };
+		15BEBE351AACFA630041077E /* ben_affleck.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBDF41AACFA630041077E /* ben_affleck.jpg */; };
+		15BEBE361AACFA630041077E /* benedict_cumberbatch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBDF51AACFA630041077E /* benedict_cumberbatch.jpg */; };
+		15BEBE371AACFA630041077E /* benicio_del_toro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBDF61AACFA630041077E /* benicio_del_toro.jpg */; };
+		15BEBE381AACFA630041077E /* bill_murray.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBDF71AACFA630041077E /* bill_murray.jpg */; };
+		15BEBE391AACFA630041077E /* brad_pitt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBDF81AACFA630041077E /* brad_pitt.jpg */; };
+		15BEBE3A1AACFA630041077E /* bradley_cooper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBDF91AACFA630041077E /* bradley_cooper.jpg */; };
+		15BEBE3B1AACFA630041077E /* bruce_willis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBDFA1AACFA630041077E /* bruce_willis.jpg */; };
+		15BEBE3C1AACFA630041077E /* channing_tatum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBDFB1AACFA630041077E /* channing_tatum.jpg */; };
+		15BEBE3D1AACFA630041077E /* christian_bale.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBDFC1AACFA630041077E /* christian_bale.jpg */; };
+		15BEBE3E1AACFA630041077E /* christoph_waltz.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBDFD1AACFA630041077E /* christoph_waltz.jpg */; };
+		15BEBE3F1AACFA630041077E /* clint_eastwood.png in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBDFE1AACFA630041077E /* clint_eastwood.png */; };
+		15BEBE401AACFA630041077E /* colin_firth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBDFF1AACFA630041077E /* colin_firth.jpg */; };
+		15BEBE411AACFA630041077E /* daniel_day-lewis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE001AACFA630041077E /* daniel_day-lewis.jpg */; };
+		15BEBE421AACFA630041077E /* denzel_washington.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE011AACFA630041077E /* denzel_washington.jpg */; };
+		15BEBE431AACFA630041077E /* dev_patel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE021AACFA630041077E /* dev_patel.jpg */; };
+		15BEBE441AACFA630041077E /* dustin_hoffman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE031AACFA630041077E /* dustin_hoffman.jpg */; };
+		15BEBE451AACFA630041077E /* eddie_murphy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE041AACFA630041077E /* eddie_murphy.jpg */; };
+		15BEBE461AACFA630041077E /* edward_norton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE051AACFA630041077E /* edward_norton.jpg */; };
+		15BEBE471AACFA630041077E /* forest_whitaker.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE061AACFA630041077E /* forest_whitaker.jpg */; };
+		15BEBE481AACFA630041077E /* gary_oldman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE071AACFA630041077E /* gary_oldman.jpg */; };
+		15BEBE491AACFA630041077E /* george_clooney.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE081AACFA630041077E /* george_clooney.jpg */; };
+		15BEBE4A1AACFA630041077E /* harrison_ford.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE091AACFA630041077E /* harrison_ford.jpg */; };
+		15BEBE4B1AACFA630041077E /* heath_ledger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE0A1AACFA630041077E /* heath_ledger.jpg */; };
+		15BEBE4C1AACFA630041077E /* hugh_jackman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE0B1AACFA630041077E /* hugh_jackman.jpg */; };
+		15BEBE4D1AACFA630041077E /* jack_nicholson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE0C1AACFA630041077E /* jack_nicholson.jpg */; };
+		15BEBE4E1AACFA630041077E /* jackie_chan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE0D1AACFA630041077E /* jackie_chan.jpg */; };
+		15BEBE4F1AACFA630041077E /* jamie_foxx.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE0E1AACFA630041077E /* jamie_foxx.jpg */; };
+		15BEBE501AACFA630041077E /* javier_bardem.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE0F1AACFA630041077E /* javier_bardem.jpg */; };
+		15BEBE511AACFA630041077E /* jean_dujardin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE101AACFA630041077E /* jean_dujardin.jpg */; };
+		15BEBE521AACFA630041077E /* jeff_bridges.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE111AACFA630041077E /* jeff_bridges.jpg */; };
+		15BEBE531AACFA630041077E /* jet_li.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE121AACFA630041077E /* jet_li.jpg */; };
+		15BEBE541AACFA630041077E /* jim_carrey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE131AACFA630041077E /* jim_carrey.jpg */; };
+		15BEBE551AACFA630041077E /* joaquin_phoenix.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE141AACFA630041077E /* joaquin_phoenix.jpg */; };
+		15BEBE561AACFA630041077E /* john_malkovich.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE151AACFA630041077E /* john_malkovich.jpg */; };
+		15BEBE571AACFA630041077E /* johnny_depp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE161AACFA630041077E /* johnny_depp.jpg */; };
+		15BEBE581AACFA630041077E /* joseph_gordon-levitt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE171AACFA630041077E /* joseph_gordon-levitt.jpg */; };
+		15BEBE591AACFA630041077E /* jude_law.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE181AACFA630041077E /* jude_law.jpg */; };
+		15BEBE5A1AACFA630041077E /* justin_timberlake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE191AACFA630041077E /* justin_timberlake.jpg */; };
+		15BEBE5B1AACFA630041077E /* keanu_reeves.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE1A1AACFA630041077E /* keanu_reeves.jpg */; };
+		15BEBE5C1AACFA630041077E /* ken_jeong.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE1B1AACFA630041077E /* ken_jeong.jpg */; };
+		15BEBE5D1AACFA630041077E /* kevin_spacey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE1C1AACFA630041077E /* kevin_spacey.jpg */; };
+		15BEBE5E1AACFA630041077E /* leonardo_dicaprio.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE1D1AACFA630041077E /* leonardo_dicaprio.jpg */; };
+		15BEBE5F1AACFA630041077E /* liam_neeson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE1E1AACFA630041077E /* liam_neeson.jpg */; };
+		15BEBE601AACFA630041077E /* matt_damon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE1F1AACFA630041077E /* matt_damon.jpg */; };
+		15BEBE611AACFA630041077E /* matthew_mcconaughey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE201AACFA630041077E /* matthew_mcconaughey.jpg */; };
+		15BEBE621AACFA630041077E /* morgan_freeman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE211AACFA630041077E /* morgan_freeman.jpg */; };
+		15BEBE631AACFA630041077E /* nicolas_cage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE221AACFA630041077E /* nicolas_cage.jpg */; };
+		15BEBE641AACFA630041077E /* robert_de_niro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE231AACFA630041077E /* robert_de_niro.jpg */; };
+		15BEBE651AACFA630041077E /* robert_downey_jr.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE241AACFA630041077E /* robert_downey_jr.jpg */; };
+		15BEBE661AACFA630041077E /* robert_pattinson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE251AACFA630041077E /* robert_pattinson.jpg */; };
+		15BEBE671AACFA630041077E /* robin_williams.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE261AACFA630041077E /* robin_williams.jpg */; };
+		15BEBE681AACFA630041077E /* ryan_gosling.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE271AACFA630041077E /* ryan_gosling.jpg */; };
+		15BEBE691AACFA630041077E /* ryan_reynolds.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE281AACFA630041077E /* ryan_reynolds.jpg */; };
+		15BEBE6A1AACFA630041077E /* samuel_l._jackson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE291AACFA630041077E /* samuel_l._jackson.jpg */; };
+		15BEBE6B1AACFA630041077E /* sean_penn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE2A1AACFA630041077E /* sean_penn.jpg */; };
+		15BEBE6C1AACFA630041077E /* steve_carell.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE2B1AACFA630041077E /* steve_carell.jpg */; };
+		15BEBE6D1AACFA630041077E /* taylor_lautner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE2C1AACFA630041077E /* taylor_lautner.jpg */; };
+		15BEBE6E1AACFA630041077E /* tom_cruise.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE2D1AACFA630041077E /* tom_cruise.jpg */; };
+		15BEBE6F1AACFA630041077E /* tom_hanks.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE2E1AACFA630041077E /* tom_hanks.jpg */; };
+		15BEBE701AACFA630041077E /* will_smith.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE2F1AACFA630041077E /* will_smith.jpg */; };
+		15BEBE711AACFA630041077E /* zac_efron.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE301AACFA630041077E /* zac_efron.jpg */; };
+		15BEBE731AAD5E3C0041077E /* switch-camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE721AAD5E3C0041077E /* switch-camera.png */; };
+		15BEBE771AAD64AE0041077E /* starface.png in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE761AAD64AE0041077E /* starface.png */; };
+		15BEBE7A1AAD68C70041077E /* button men on.png in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE781AAD68C70041077E /* button men on.png */; };
+		15BEBE7B1AAD68C70041077E /* button women on.png in Resources */ = {isa = PBXBuildFile; fileRef = 15BEBE791AAD68C70041077E /* button women on.png */; };
+		15CBBBF81AA55E9C007BEA02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CBBBF71AA55E9C007BEA02 /* main.m */; };
+		15CBBBFB1AA55E9C007BEA02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CBBBFA1AA55E9C007BEA02 /* AppDelegate.m */; };
+		15CBBBFE1AA55E9C007BEA02 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CBBBFD1AA55E9C007BEA02 /* ViewController.m */; };
+		15CBBC011AA55E9C007BEA02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15CBBBFF1AA55E9C007BEA02 /* Main.storyboard */; };
+		15CBBC031AA55E9C007BEA02 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CBBC021AA55E9C007BEA02 /* Images.xcassets */; };
+		15CBBC061AA55E9C007BEA02 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15CBBC041AA55E9C007BEA02 /* LaunchScreen.xib */; };
+		15CBBC1C1AA56692007BEA02 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CBBC1B1AA56692007BEA02 /* ImageIO.framework */; };
+		15CBBC1E1AA56698007BEA02 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CBBC1D1AA56698007BEA02 /* QuartzCore.framework */; };
+		15CBBC201AA5669D007BEA02 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CBBC1F1AA5669D007BEA02 /* CoreMedia.framework */; };
+		15CBBC221AA566A4007BEA02 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CBBC211AA566A4007BEA02 /* AssetsLibrary.framework */; };
+		15CBBC241AA566AA007BEA02 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CBBC231AA566AA007BEA02 /* AVFoundation.framework */; };
+		15CBBC261AA566B1007BEA02 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CBBC251AA566B1007BEA02 /* UIKit.framework */; };
+		15CBBC281AA566B7007BEA02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CBBC271AA566B7007BEA02 /* Foundation.framework */; };
+		15CBBC2A1AA566BC007BEA02 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CBBC291AA566BC007BEA02 /* CoreGraphics.framework */; };
+		15CBBC2C1AA566D7007BEA02 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CBBC2B1AA566D7007BEA02 /* CoreVideo.framework */; };
+		15CBBC2E1AA566F7007BEA02 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CBBC2D1AA566F7007BEA02 /* CoreImage.framework */; };
+		15CBBC321AA6647F007BEA02 /* ConvnetClassifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CBBC311AA6647F007BEA02 /* ConvnetClassifier.m */; };
+		15CBBC601AA669CA007BEA02 /* ccv_algebra.c in Sources */ = {isa = PBXBuildFile; fileRef = 15CBBC471AA669CA007BEA02 /* ccv_algebra.c */; };
+		15CBBC611AA669CA007BEA02 /* ccv_basic.c in Sources */ = {isa = PBXBuildFile; fileRef = 15CBBC481AA669CA007BEA02 /* ccv_basic.c */; };
+		15CBBC621AA669CA007BEA02 /* ccv_bbf.c in Sources */ = {isa = PBXBuildFile; fileRef = 15CBBC491AA669CA007BEA02 /* ccv_bbf.c */; };
+		15CBBC631AA669CA007BEA02 /* ccv_cache.c in Sources */ = {isa = PBXBuildFile; fileRef = 15CBBC4A1AA669CA007BEA02 /* ccv_cache.c */; };
+		15CBBC641AA669CA007BEA02 /* ccv_classic.c in Sources */ = {isa = PBXBuildFile; fileRef = 15CBBC4B1AA669CA007BEA02 /* ccv_classic.c */; };
+		15CBBC651AA669CA007BEA02 /* ccv_convnet.c in Sources */ = {isa = PBXBuildFile; fileRef = 15CBBC4C1AA669CA007BEA02 /* ccv_convnet.c */; };
+		15CBBC661AA669CA007BEA02 /* ccv_daisy.c in Sources */ = {isa = PBXBuildFile; fileRef = 15CBBC4D1AA669CA007BEA02 /* ccv_daisy.c */; };
+		15CBBC671AA669CA007BEA02 /* ccv_dpm.c in Sources */ = {isa = PBXBuildFile; fileRef = 15CBBC4E1AA669CA007BEA02 /* ccv_dpm.c */; };
+		15CBBC681AA669CA007BEA02 /* ccv_ferns.c in Sources */ = {isa = PBXBuildFile; fileRef = 15CBBC501AA669CA007BEA02 /* ccv_ferns.c */; };
+		15CBBC691AA669CA007BEA02 /* ccv_icf.c in Sources */ = {isa = PBXBuildFile; fileRef = 15CBBC511AA669CA007BEA02 /* ccv_icf.c */; };
+		15CBBC6A1AA669CA007BEA02 /* ccv_io.c in Sources */ = {isa = PBXBuildFile; fileRef = 15CBBC531AA669CA007BEA02 /* ccv_io.c */; };
+		15CBBC6B1AA669CA007BEA02 /* ccv_memory.c in Sources */ = {isa = PBXBuildFile; fileRef = 15CBBC541AA669CA007BEA02 /* ccv_memory.c */; };
+		15CBBC6C1AA669CA007BEA02 /* ccv_mser.c in Sources */ = {isa = PBXBuildFile; fileRef = 15CBBC551AA669CA007BEA02 /* ccv_mser.c */; };
+		15CBBC6D1AA669CA007BEA02 /* ccv_numeric.c in Sources */ = {isa = PBXBuildFile; fileRef = 15CBBC561AA669CA007BEA02 /* ccv_numeric.c */; };
+		15CBBC6E1AA669CA007BEA02 /* ccv_resample.c in Sources */ = {isa = PBXBuildFile; fileRef = 15CBBC571AA669CA007BEA02 /* ccv_resample.c */; };
+		15CBBC6F1AA669CA007BEA02 /* ccv_sift.c in Sources */ = {isa = PBXBuildFile; fileRef = 15CBBC581AA669CA007BEA02 /* ccv_sift.c */; };
+		15CBBC701AA669CA007BEA02 /* ccv_sparse_coding.c in Sources */ = {isa = PBXBuildFile; fileRef = 15CBBC591AA669CA007BEA02 /* ccv_sparse_coding.c */; };
+		15CBBC711AA669CA007BEA02 /* ccv_swt.c in Sources */ = {isa = PBXBuildFile; fileRef = 15CBBC5A1AA669CA007BEA02 /* ccv_swt.c */; };
+		15CBBC721AA669CA007BEA02 /* ccv_tld.c in Sources */ = {isa = PBXBuildFile; fileRef = 15CBBC5B1AA669CA007BEA02 /* ccv_tld.c */; };
+		15CBBC731AA669CA007BEA02 /* ccv_transform.c in Sources */ = {isa = PBXBuildFile; fileRef = 15CBBC5C1AA669CA007BEA02 /* ccv_transform.c */; };
+		15CBBC741AA669CA007BEA02 /* ccv_util.c in Sources */ = {isa = PBXBuildFile; fileRef = 15CBBC5D1AA669CA007BEA02 /* ccv_util.c */; };
+		15CDDE651AABC0C700B307AF /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CDDE641AABC0C700B307AF /* PhotoViewController.m */; };
+		15F435831ABD1E4500BF48E9 /* starface-women.wnid in Resources */ = {isa = PBXBuildFile; fileRef = 15F435821ABD1E4500BF48E9 /* starface-women.wnid */; };
+		15F435861ABD1E8C00BF48E9 /* starface-men.wnid in Resources */ = {isa = PBXBuildFile; fileRef = 15F435851ABD1E8C00BF48E9 /* starface-men.wnid */; };
+		15F435891ABD367600BF48E9 /* starface-mobile-women.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 15F435871ABD367600BF48E9 /* starface-mobile-women.sqlite3 */; };
+		15F4358A1ABD367600BF48E9 /* starface-mobile-men.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 15F435881ABD367600BF48E9 /* starface-mobile-men.sqlite3 */; };
+		15F4360A1ABD57DD00BF48E9 /* adrien_brody.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F4358B1ABD57DD00BF48E9 /* adrien_brody.jpg */; };
+		15F4360B1ABD57DD00BF48E9 /* al_pacino.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F4358C1ABD57DD00BF48E9 /* al_pacino.jpg */; };
+		15F4360C1ABD57DD00BF48E9 /* amanda_seyfried.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F4358D1ABD57DD00BF48E9 /* amanda_seyfried.jpg */; };
+		15F4360D1ABD57DD00BF48E9 /* amy_adams.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F4358E1ABD57DD00BF48E9 /* amy_adams.jpg */; };
+		15F4360E1ABD57DD00BF48E9 /* angelina_jolie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F4358F1ABD57DD00BF48E9 /* angelina_jolie.jpg */; };
+		15F4360F1ABD57DD00BF48E9 /* anna_kendrick.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435901ABD57DD00BF48E9 /* anna_kendrick.jpg */; };
+		15F436101ABD57DD00BF48E9 /* anne_hathaway.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435911ABD57DD00BF48E9 /* anne_hathaway.jpg */; };
+		15F436111ABD57DD00BF48E9 /* anthony_hopkins.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435921ABD57DD00BF48E9 /* anthony_hopkins.jpg */; };
+		15F436121ABD57DD00BF48E9 /* ashton_kutcher.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435931ABD57DD00BF48E9 /* ashton_kutcher.jpg */; };
+		15F436131ABD57DD00BF48E9 /* ben_affleck.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435941ABD57DD00BF48E9 /* ben_affleck.jpg */; };
+		15F436141ABD57DD00BF48E9 /* benedict_cumberbatch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435951ABD57DD00BF48E9 /* benedict_cumberbatch.jpg */; };
+		15F436151ABD57DD00BF48E9 /* benicio_del_toro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435961ABD57DD00BF48E9 /* benicio_del_toro.jpg */; };
+		15F436161ABD57DD00BF48E9 /* bill_murray.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435971ABD57DD00BF48E9 /* bill_murray.jpg */; };
+		15F436171ABD57DD00BF48E9 /* brad_pitt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435981ABD57DD00BF48E9 /* brad_pitt.jpg */; };
+		15F436181ABD57DD00BF48E9 /* bradley_cooper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435991ABD57DD00BF48E9 /* bradley_cooper.jpg */; };
+		15F436191ABD57DD00BF48E9 /* brittany_murphy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F4359A1ABD57DD00BF48E9 /* brittany_murphy.jpg */; };
+		15F4361A1ABD57DD00BF48E9 /* bruce_willis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F4359B1ABD57DD00BF48E9 /* bruce_willis.jpg */; };
+		15F4361B1ABD57DD00BF48E9 /* cameron_diaz.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F4359C1ABD57DD00BF48E9 /* cameron_diaz.jpg */; };
+		15F4361C1ABD57DD00BF48E9 /* carey_mulligan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F4359D1ABD57DD00BF48E9 /* carey_mulligan.jpg */; };
+		15F4361D1ABD57DD00BF48E9 /* cate_blanchett.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F4359E1ABD57DD00BF48E9 /* cate_blanchett.jpg */; };
+		15F4361E1ABD57DD00BF48E9 /* catherine_zeta-jones.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F4359F1ABD57DD00BF48E9 /* catherine_zeta-jones.jpg */; };
+		15F4361F1ABD57DD00BF48E9 /* channing_tatum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435A01ABD57DD00BF48E9 /* channing_tatum.jpg */; };
+		15F436201ABD57DD00BF48E9 /* charlize_theron.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435A11ABD57DD00BF48E9 /* charlize_theron.jpg */; };
+		15F436211ABD57DD00BF48E9 /* chloe_grace_moretz.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435A21ABD57DD00BF48E9 /* chloe_grace_moretz.jpg */; };
+		15F436221ABD57DD00BF48E9 /* christian_bale.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435A31ABD57DD00BF48E9 /* christian_bale.jpg */; };
+		15F436231ABD57DD00BF48E9 /* christina_ricci.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435A41ABD57DD00BF48E9 /* christina_ricci.jpg */; };
+		15F436241ABD57DD00BF48E9 /* christoph_waltz.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435A51ABD57DD00BF48E9 /* christoph_waltz.jpg */; };
+		15F436251ABD57DD00BF48E9 /* clint_eastwood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435A61ABD57DD00BF48E9 /* clint_eastwood.jpg */; };
+		15F436261ABD57DD00BF48E9 /* clint_eastwood.png in Resources */ = {isa = PBXBuildFile; fileRef = 15F435A71ABD57DD00BF48E9 /* clint_eastwood.png */; };
+		15F436271ABD57DD00BF48E9 /* colin_firth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435A81ABD57DD00BF48E9 /* colin_firth.jpg */; };
+		15F436291ABD57DD00BF48E9 /* demi_moore.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435AA1ABD57DD00BF48E9 /* demi_moore.jpg */; };
+		15F4362A1ABD57DD00BF48E9 /* denzel_washington.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435AB1ABD57DD00BF48E9 /* denzel_washington.jpg */; };
+		15F4362B1ABD57DD00BF48E9 /* dev_patel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435AC1ABD57DD00BF48E9 /* dev_patel.jpg */; };
+		15F4362C1ABD57DD00BF48E9 /* drew_barrymore.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435AD1ABD57DD00BF48E9 /* drew_barrymore.jpg */; };
+		15F4362D1ABD57DD00BF48E9 /* dustin_hoffman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435AE1ABD57DD00BF48E9 /* dustin_hoffman.jpg */; };
+		15F4362E1ABD57DD00BF48E9 /* eddie_murphy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435AF1ABD57DD00BF48E9 /* eddie_murphy.jpg */; };
+		15F4362F1ABD57DD00BF48E9 /* edward_norton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435B01ABD57DD00BF48E9 /* edward_norton.jpg */; };
+		15F436301ABD57DD00BF48E9 /* emma_stone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435B11ABD57DD00BF48E9 /* emma_stone.jpg */; };
+		15F436311ABD57DD00BF48E9 /* emma_thompson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435B21ABD57DD00BF48E9 /* emma_thompson.jpg */; };
+		15F436321ABD57DD00BF48E9 /* emma_watson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435B31ABD57DD00BF48E9 /* emma_watson.jpg */; };
+		15F436331ABD57DD00BF48E9 /* evan_rachel_wood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435B41ABD57DD00BF48E9 /* evan_rachel_wood.jpg */; };
+		15F436341ABD57DD00BF48E9 /* forest_whitaker.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435B51ABD57DD00BF48E9 /* forest_whitaker.jpg */; };
+		15F436351ABD57DD00BF48E9 /* gary_oldman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435B61ABD57DD00BF48E9 /* gary_oldman.jpg */; };
+		15F436361ABD57DD00BF48E9 /* george_clooney.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435B71ABD57DD00BF48E9 /* george_clooney.jpg */; };
+		15F436371ABD57DD00BF48E9 /* glenn_close.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435B81ABD57DD00BF48E9 /* glenn_close.jpg */; };
+		15F436381ABD57DD00BF48E9 /* gwyneth_paltrow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435B91ABD57DD00BF48E9 /* gwyneth_paltrow.jpg */; };
+		15F436391ABD57DD00BF48E9 /* halle_berry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435BA1ABD57DD00BF48E9 /* halle_berry.jpg */; };
+		15F4363A1ABD57DD00BF48E9 /* harrison_ford.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435BB1ABD57DD00BF48E9 /* harrison_ford.jpg */; };
+		15F4363B1ABD57DD00BF48E9 /* heath_ledger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435BC1ABD57DD00BF48E9 /* heath_ledger.jpg */; };
+		15F4363C1ABD57DD00BF48E9 /* helen_hunt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435BD1ABD57DD00BF48E9 /* helen_hunt.jpg */; };
+		15F4363D1ABD57DD00BF48E9 /* helena_bonham_carter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435BE1ABD57DD00BF48E9 /* helena_bonham_carter.jpg */; };
+		15F4363E1ABD57DD00BF48E9 /* hilary_swank.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435BF1ABD57DD00BF48E9 /* hilary_swank.jpg */; };
+		15F4363F1ABD57DD00BF48E9 /* hugh_jackman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435C01ABD57DD00BF48E9 /* hugh_jackman.jpg */; };
+		15F436401ABD57DD00BF48E9 /* jack_nicholson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435C11ABD57DD00BF48E9 /* jack_nicholson.jpg */; };
+		15F436411ABD57DD00BF48E9 /* jackie_chan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435C21ABD57DD00BF48E9 /* jackie_chan.jpg */; };
+		15F436421ABD57DD00BF48E9 /* jamie_foxx.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435C31ABD57DD00BF48E9 /* jamie_foxx.jpg */; };
+		15F436431ABD57DD00BF48E9 /* javier_bardem.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435C41ABD57DD00BF48E9 /* javier_bardem.jpg */; };
+		15F436441ABD57DD00BF48E9 /* jean_dujardin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435C51ABD57DD00BF48E9 /* jean_dujardin.jpg */; };
+		15F436451ABD57DD00BF48E9 /* jeff_bridges.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435C61ABD57DD00BF48E9 /* jeff_bridges.jpg */; };
+		15F436461ABD57DD00BF48E9 /* jennifer_aniston.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435C71ABD57DD00BF48E9 /* jennifer_aniston.jpg */; };
+		15F436471ABD57DD00BF48E9 /* jennifer_lawrence.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435C81ABD57DD00BF48E9 /* jennifer_lawrence.jpg */; };
+		15F436481ABD57DD00BF48E9 /* jessica_alba.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435C91ABD57DD00BF48E9 /* jessica_alba.jpg */; };
+		15F436491ABD57DD00BF48E9 /* jet_li.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435CA1ABD57DD00BF48E9 /* jet_li.jpg */; };
+		15F4364A1ABD57DD00BF48E9 /* jim_carrey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435CB1ABD57DD00BF48E9 /* jim_carrey.jpg */; };
+		15F4364B1ABD57DD00BF48E9 /* joaquin_phoenix.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435CC1ABD57DD00BF48E9 /* joaquin_phoenix.jpg */; };
+		15F4364C1ABD57DD00BF48E9 /* jodie_foster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435CD1ABD57DD00BF48E9 /* jodie_foster.jpg */; };
+		15F4364D1ABD57DD00BF48E9 /* john_malkovich.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435CE1ABD57DD00BF48E9 /* john_malkovich.jpg */; };
+		15F4364E1ABD57DD00BF48E9 /* johnny_depp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435CF1ABD57DD00BF48E9 /* johnny_depp.jpg */; };
+		15F4364F1ABD57DD00BF48E9 /* joseph_gordon-levitt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435D01ABD57DD00BF48E9 /* joseph_gordon-levitt.jpg */; };
+		15F436501ABD57DD00BF48E9 /* jude_law.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435D11ABD57DD00BF48E9 /* jude_law.jpg */; };
+		15F436511ABD57DD00BF48E9 /* julia_roberts.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435D21ABD57DD00BF48E9 /* julia_roberts.jpg */; };
+		15F436521ABD57DD00BF48E9 /* julianne_moore.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435D31ABD57DD00BF48E9 /* julianne_moore.jpg */; };
+		15F436531ABD57DD00BF48E9 /* justin_timberlake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435D41ABD57DD00BF48E9 /* justin_timberlake.jpg */; };
+		15F436541ABD57DD00BF48E9 /* kate_winslet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435D51ABD57DD00BF48E9 /* kate_winslet.jpg */; };
+		15F436551ABD57DD00BF48E9 /* katherine_heigl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435D61ABD57DD00BF48E9 /* katherine_heigl.jpg */; };
+		15F436561ABD57DD00BF48E9 /* keanu_reeves.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435D71ABD57DD00BF48E9 /* keanu_reeves.jpg */; };
+		15F436571ABD57DD00BF48E9 /* keira_knightley.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435D81ABD57DD00BF48E9 /* keira_knightley.jpg */; };
+		15F436581ABD57DD00BF48E9 /* ken_jeong.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435D91ABD57DD00BF48E9 /* ken_jeong.jpg */; };
+		15F436591ABD57DD00BF48E9 /* kerry_washington.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435DA1ABD57DD00BF48E9 /* kerry_washington.jpg */; };
+		15F4365A1ABD57DD00BF48E9 /* kevin_spacey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435DB1ABD57DD00BF48E9 /* kevin_spacey.jpg */; };
+		15F4365B1ABD57DD00BF48E9 /* kirsten_dunst.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435DC1ABD57DD00BF48E9 /* kirsten_dunst.jpg */; };
+		15F4365C1ABD57DD00BF48E9 /* kristen_stewart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435DD1ABD57DD00BF48E9 /* kristen_stewart.jpg */; };
+		15F4365D1ABD57DD00BF48E9 /* laura_linney .jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435DE1ABD57DD00BF48E9 /* laura_linney .jpg */; };
+		15F4365E1ABD57DD00BF48E9 /* leonardo_dicaprio.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435DF1ABD57DD00BF48E9 /* leonardo_dicaprio.jpg */; };
+		15F4365F1ABD57DD00BF48E9 /* liam_neeson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435E01ABD57DD00BF48E9 /* liam_neeson.jpg */; };
+		15F436601ABD57DD00BF48E9 /* liv_tyler.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435E11ABD57DD00BF48E9 /* liv_tyler.jpg */; };
+		15F436611ABD57DD00BF48E9 /* lucy_liu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435E21ABD57DD00BF48E9 /* lucy_liu.jpg */; };
+		15F436621ABD57DD00BF48E9 /* marion_cotillard.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435E31ABD57DD00BF48E9 /* marion_cotillard.jpg */; };
+		15F436631ABD57DD00BF48E9 /* matt_damon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435E41ABD57DD00BF48E9 /* matt_damon.jpg */; };
+		15F436641ABD57DD00BF48E9 /* matthew_mcconaughey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435E51ABD57DD00BF48E9 /* matthew_mcconaughey.jpg */; };
+		15F436651ABD57DD00BF48E9 /* meryl_streep.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435E61ABD57DD00BF48E9 /* meryl_streep.jpg */; };
+		15F436661ABD57DD00BF48E9 /* michelle_pfeiffer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435E71ABD57DD00BF48E9 /* michelle_pfeiffer.jpg */; };
+		15F436671ABD57DD00BF48E9 /* michelle_williams.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435E81ABD57DD00BF48E9 /* michelle_williams.jpg */; };
+		15F436681ABD57DD00BF48E9 /* mila_kunis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435E91ABD57DD00BF48E9 /* mila_kunis.jpg */; };
+		15F436691ABD57DD00BF48E9 /* mindy_kaling.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435EA1ABD57DD00BF48E9 /* mindy_kaling.jpg */; };
+		15F4366A1ABD57DD00BF48E9 /* morgan_freeman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435EB1ABD57DD00BF48E9 /* morgan_freeman.jpg */; };
+		15F4366B1ABD57DD00BF48E9 /* naomi_watts.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435EC1ABD57DD00BF48E9 /* naomi_watts.jpg */; };
+		15F4366C1ABD57DD00BF48E9 /* natalie_portman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435ED1ABD57DD00BF48E9 /* natalie_portman.jpg */; };
+		15F4366D1ABD57DD00BF48E9 /* nicolas_cage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435EE1ABD57DD00BF48E9 /* nicolas_cage.jpg */; };
+		15F4366E1ABD57DD00BF48E9 /* nicole_kidman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435EF1ABD57DD00BF48E9 /* nicole_kidman.jpg */; };
+		15F4366F1ABD57DD00BF48E9 /* penelope_cruz.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435F01ABD57DD00BF48E9 /* penelope_cruz.jpg */; };
+		15F436701ABD57DD00BF48E9 /* rachel_mcadams.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435F11ABD57DD00BF48E9 /* rachel_mcadams.jpg */; };
+		15F436711ABD57DD00BF48E9 /* reese_witherspoon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435F21ABD57DD00BF48E9 /* reese_witherspoon.jpg */; };
+		15F436721ABD57DD00BF48E9 /* robert_de_niro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435F31ABD57DD00BF48E9 /* robert_de_niro.jpg */; };
+		15F436731ABD57DD00BF48E9 /* robert_downey_jr.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435F41ABD57DD00BF48E9 /* robert_downey_jr.jpg */; };
+		15F436741ABD57DD00BF48E9 /* robert_pattinson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435F51ABD57DD00BF48E9 /* robert_pattinson.jpg */; };
+		15F436751ABD57DD00BF48E9 /* robin_williams.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435F61ABD57DD00BF48E9 /* robin_williams.jpg */; };
+		15F436761ABD57DD00BF48E9 /* rosario_dawson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435F71ABD57DD00BF48E9 /* rosario_dawson.jpg */; };
+		15F436771ABD57DD00BF48E9 /* ryan_gosling.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435F81ABD57DD00BF48E9 /* ryan_gosling.jpg */; };
+		15F436781ABD57DD00BF48E9 /* ryan_reynolds.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435F91ABD57DD00BF48E9 /* ryan_reynolds.jpg */; };
+		15F436791ABD57DD00BF48E9 /* samuel_l._jackson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435FA1ABD57DD00BF48E9 /* samuel_l._jackson.jpg */; };
+		15F4367A1ABD57DD00BF48E9 /* samuel_l.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435FB1ABD57DD00BF48E9 /* samuel_l.jpg */; };
+		15F4367B1ABD57DD00BF48E9 /* sandra_bullock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435FC1ABD57DD00BF48E9 /* sandra_bullock.jpg */; };
+		15F4367C1ABD57DD00BF48E9 /* scarlett_johansson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435FD1ABD57DD00BF48E9 /* scarlett_johansson.jpg */; };
+		15F4367D1ABD57DD00BF48E9 /* sean_penn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435FE1ABD57DD00BF48E9 /* sean_penn.jpg */; };
+		15F4367E1ABD57DD00BF48E9 /* sharon_stone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F435FF1ABD57DD00BF48E9 /* sharon_stone.jpg */; };
+		15F4367F1ABD57DD00BF48E9 /* sigourney_weaver.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F436001ABD57DD00BF48E9 /* sigourney_weaver.jpg */; };
+		15F436801ABD57DD00BF48E9 /* steve_carell.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F436011ABD57DD00BF48E9 /* steve_carell.jpg */; };
+		15F436811ABD57DD00BF48E9 /* taylor_lautner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F436021ABD57DD00BF48E9 /* taylor_lautner.jpg */; };
+		15F436821ABD57DD00BF48E9 /* tom_cruise.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F436031ABD57DD00BF48E9 /* tom_cruise.jpg */; };
+		15F436831ABD57DD00BF48E9 /* tom_hanks.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F436041ABD57DD00BF48E9 /* tom_hanks.jpg */; };
+		15F436841ABD57DD00BF48E9 /* uma_thurman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F436051ABD57DD00BF48E9 /* uma_thurman.jpg */; };
+		15F436851ABD57DD00BF48E9 /* will_smith.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F436061ABD57DD00BF48E9 /* will_smith.jpg */; };
+		15F436861ABD57DD00BF48E9 /* winona_ryder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F436071ABD57DD00BF48E9 /* winona_ryder.jpg */; };
+		15F436871ABD57DD00BF48E9 /* zac_efron.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F436081ABD57DD00BF48E9 /* zac_efron.jpg */; };
+		15F436881ABD57DD00BF48E9 /* zooey_deschanel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15F436091ABD57DD00BF48E9 /* zooey_deschanel.jpg */; };
+		15FF50921AAFFD2F0039A3B6 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15FF50911AAFFD2E0039A3B6 /* Media.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1516F59E1AA66B1E00C70341 /* dSFMT-common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dSFMT-common.h"; sourceTree = "<group>"; };
+		1516F59F1AA66B1E00C70341 /* dSFMT-params.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dSFMT-params.h"; sourceTree = "<group>"; };
+		1516F5A01AA66B1E00C70341 /* dSFMT-params19937.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dSFMT-params19937.h"; sourceTree = "<group>"; };
+		1516F5A11AA66B1E00C70341 /* dSFMT.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dSFMT.c; sourceTree = "<group>"; };
+		1516F5A21AA66B1E00C70341 /* dSFMT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dSFMT.h; sourceTree = "<group>"; };
+		1516F5A51AA66B4200C70341 /* _kiss_fft_guts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _kiss_fft_guts.h; sourceTree = "<group>"; };
+		1516F5A61AA66B4200C70341 /* _kissf_fft_guts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _kissf_fft_guts.h; sourceTree = "<group>"; };
+		1516F5A71AA66B4200C70341 /* kiss_fft.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kiss_fft.c; sourceTree = "<group>"; };
+		1516F5A81AA66B4200C70341 /* kiss_fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kiss_fft.h; sourceTree = "<group>"; };
+		1516F5A91AA66B4200C70341 /* kiss_fftnd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kiss_fftnd.c; sourceTree = "<group>"; };
+		1516F5AA1AA66B4200C70341 /* kiss_fftnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kiss_fftnd.h; sourceTree = "<group>"; };
+		1516F5AB1AA66B4200C70341 /* kiss_fftndr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kiss_fftndr.c; sourceTree = "<group>"; };
+		1516F5AC1AA66B4200C70341 /* kiss_fftndr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kiss_fftndr.h; sourceTree = "<group>"; };
+		1516F5AD1AA66B4200C70341 /* kiss_fftr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kiss_fftr.c; sourceTree = "<group>"; };
+		1516F5AE1AA66B4200C70341 /* kiss_fftr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kiss_fftr.h; sourceTree = "<group>"; };
+		1516F5AF1AA66B4200C70341 /* kissf_fft.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kissf_fft.c; sourceTree = "<group>"; };
+		1516F5B01AA66B4200C70341 /* kissf_fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kissf_fft.h; sourceTree = "<group>"; };
+		1516F5B11AA66B4200C70341 /* kissf_fftnd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kissf_fftnd.c; sourceTree = "<group>"; };
+		1516F5B21AA66B4200C70341 /* kissf_fftnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kissf_fftnd.h; sourceTree = "<group>"; };
+		1516F5B31AA66B4200C70341 /* kissf_fftndr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kissf_fftndr.c; sourceTree = "<group>"; };
+		1516F5B41AA66B4200C70341 /* kissf_fftndr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kissf_fftndr.h; sourceTree = "<group>"; };
+		1516F5B51AA66B4200C70341 /* kissf_fftr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kissf_fftr.c; sourceTree = "<group>"; };
+		1516F5B61AA66B4200C70341 /* kissf_fftr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kissf_fftr.h; sourceTree = "<group>"; };
+		1516F5B81AA66B4200C70341 /* SFMT-alti.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFMT-alti.h"; sourceTree = "<group>"; };
+		1516F5B91AA66B4200C70341 /* SFMT-common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFMT-common.h"; sourceTree = "<group>"; };
+		1516F5BA1AA66B4200C70341 /* SFMT-params.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFMT-params.h"; sourceTree = "<group>"; };
+		1516F5BB1AA66B4200C70341 /* SFMT-params19937.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFMT-params19937.h"; sourceTree = "<group>"; };
+		1516F5BC1AA66B4200C70341 /* SFMT-sse2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFMT-sse2.h"; sourceTree = "<group>"; };
+		1516F5BD1AA66B4200C70341 /* SFMT.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SFMT.c; sourceTree = "<group>"; };
+		1516F5BE1AA66B4200C70341 /* SFMT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFMT.h; sourceTree = "<group>"; };
+		1516F5C01AA66B4200C70341 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		1516F5C11AA66B4200C70341 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		1516F5CC1AA66B7800C70341 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		1516F5DB1AA6D08F00C70341 /* ArtistsData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistsData.m; sourceTree = "<group>"; };
+		1516F5DD1AA6D09E00C70341 /* ArtistsData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistsData.h; sourceTree = "<group>"; };
+		1527CB071ABE98760040BA78 /* daniel_day-lewis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "daniel_day-lewis.jpg"; path = "artists_pictures/daniel_day-lewis.jpg"; sourceTree = "<group>"; };
+		1545D59E1ABE521400F0897C /* milla_jovovich.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = milla_jovovich.jpg; path = artists_pictures/milla_jovovich.jpg; sourceTree = "<group>"; };
+		1545D5A01ABE521C00F0897C /* mila_kunis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mila_kunis.jpg; path = artists_pictures/mila_kunis.jpg; sourceTree = "<group>"; };
+		15BEBDF01AACFA630041077E /* adrien_brody.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = adrien_brody.jpg; path = artists_pictures/adrien_brody.jpg; sourceTree = "<group>"; };
+		15BEBDF11AACFA630041077E /* al_pacino.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = al_pacino.jpg; path = artists_pictures/al_pacino.jpg; sourceTree = "<group>"; };
+		15BEBDF21AACFA630041077E /* anthony_hopkins.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = anthony_hopkins.jpg; path = artists_pictures/anthony_hopkins.jpg; sourceTree = "<group>"; };
+		15BEBDF31AACFA630041077E /* ashton_kutcher.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ashton_kutcher.jpg; path = artists_pictures/ashton_kutcher.jpg; sourceTree = "<group>"; };
+		15BEBDF41AACFA630041077E /* ben_affleck.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ben_affleck.jpg; path = artists_pictures/ben_affleck.jpg; sourceTree = "<group>"; };
+		15BEBDF51AACFA630041077E /* benedict_cumberbatch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = benedict_cumberbatch.jpg; path = artists_pictures/benedict_cumberbatch.jpg; sourceTree = "<group>"; };
+		15BEBDF61AACFA630041077E /* benicio_del_toro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = benicio_del_toro.jpg; path = artists_pictures/benicio_del_toro.jpg; sourceTree = "<group>"; };
+		15BEBDF71AACFA630041077E /* bill_murray.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bill_murray.jpg; path = artists_pictures/bill_murray.jpg; sourceTree = "<group>"; };
+		15BEBDF81AACFA630041077E /* brad_pitt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = brad_pitt.jpg; path = artists_pictures/brad_pitt.jpg; sourceTree = "<group>"; };
+		15BEBDF91AACFA630041077E /* bradley_cooper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bradley_cooper.jpg; path = artists_pictures/bradley_cooper.jpg; sourceTree = "<group>"; };
+		15BEBDFA1AACFA630041077E /* bruce_willis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bruce_willis.jpg; path = artists_pictures/bruce_willis.jpg; sourceTree = "<group>"; };
+		15BEBDFB1AACFA630041077E /* channing_tatum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = channing_tatum.jpg; path = artists_pictures/channing_tatum.jpg; sourceTree = "<group>"; };
+		15BEBDFC1AACFA630041077E /* christian_bale.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = christian_bale.jpg; path = artists_pictures/christian_bale.jpg; sourceTree = "<group>"; };
+		15BEBDFD1AACFA630041077E /* christoph_waltz.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = christoph_waltz.jpg; path = artists_pictures/christoph_waltz.jpg; sourceTree = "<group>"; };
+		15BEBDFE1AACFA630041077E /* clint_eastwood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = clint_eastwood.png; path = artists_pictures/clint_eastwood.png; sourceTree = "<group>"; };
+		15BEBDFF1AACFA630041077E /* colin_firth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = colin_firth.jpg; path = artists_pictures/colin_firth.jpg; sourceTree = "<group>"; };
+		15BEBE001AACFA630041077E /* daniel_day-lewis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "daniel_day-lewis.jpg"; path = "artists_pictures/daniel_day-lewis.jpg"; sourceTree = "<group>"; };
+		15BEBE011AACFA630041077E /* denzel_washington.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = denzel_washington.jpg; path = artists_pictures/denzel_washington.jpg; sourceTree = "<group>"; };
+		15BEBE021AACFA630041077E /* dev_patel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dev_patel.jpg; path = artists_pictures/dev_patel.jpg; sourceTree = "<group>"; };
+		15BEBE031AACFA630041077E /* dustin_hoffman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dustin_hoffman.jpg; path = artists_pictures/dustin_hoffman.jpg; sourceTree = "<group>"; };
+		15BEBE041AACFA630041077E /* eddie_murphy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = eddie_murphy.jpg; path = artists_pictures/eddie_murphy.jpg; sourceTree = "<group>"; };
+		15BEBE051AACFA630041077E /* edward_norton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = edward_norton.jpg; path = artists_pictures/edward_norton.jpg; sourceTree = "<group>"; };
+		15BEBE061AACFA630041077E /* forest_whitaker.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = forest_whitaker.jpg; path = artists_pictures/forest_whitaker.jpg; sourceTree = "<group>"; };
+		15BEBE071AACFA630041077E /* gary_oldman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = gary_oldman.jpg; path = artists_pictures/gary_oldman.jpg; sourceTree = "<group>"; };
+		15BEBE081AACFA630041077E /* george_clooney.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = george_clooney.jpg; path = artists_pictures/george_clooney.jpg; sourceTree = "<group>"; };
+		15BEBE091AACFA630041077E /* harrison_ford.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = harrison_ford.jpg; path = artists_pictures/harrison_ford.jpg; sourceTree = "<group>"; };
+		15BEBE0A1AACFA630041077E /* heath_ledger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = heath_ledger.jpg; path = artists_pictures/heath_ledger.jpg; sourceTree = "<group>"; };
+		15BEBE0B1AACFA630041077E /* hugh_jackman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hugh_jackman.jpg; path = artists_pictures/hugh_jackman.jpg; sourceTree = "<group>"; };
+		15BEBE0C1AACFA630041077E /* jack_nicholson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jack_nicholson.jpg; path = artists_pictures/jack_nicholson.jpg; sourceTree = "<group>"; };
+		15BEBE0D1AACFA630041077E /* jackie_chan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jackie_chan.jpg; path = artists_pictures/jackie_chan.jpg; sourceTree = "<group>"; };
+		15BEBE0E1AACFA630041077E /* jamie_foxx.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jamie_foxx.jpg; path = artists_pictures/jamie_foxx.jpg; sourceTree = "<group>"; };
+		15BEBE0F1AACFA630041077E /* javier_bardem.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = javier_bardem.jpg; path = artists_pictures/javier_bardem.jpg; sourceTree = "<group>"; };
+		15BEBE101AACFA630041077E /* jean_dujardin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jean_dujardin.jpg; path = artists_pictures/jean_dujardin.jpg; sourceTree = "<group>"; };
+		15BEBE111AACFA630041077E /* jeff_bridges.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jeff_bridges.jpg; path = artists_pictures/jeff_bridges.jpg; sourceTree = "<group>"; };
+		15BEBE121AACFA630041077E /* jet_li.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jet_li.jpg; path = artists_pictures/jet_li.jpg; sourceTree = "<group>"; };
+		15BEBE131AACFA630041077E /* jim_carrey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jim_carrey.jpg; path = artists_pictures/jim_carrey.jpg; sourceTree = "<group>"; };
+		15BEBE141AACFA630041077E /* joaquin_phoenix.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = joaquin_phoenix.jpg; path = artists_pictures/joaquin_phoenix.jpg; sourceTree = "<group>"; };
+		15BEBE151AACFA630041077E /* john_malkovich.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = john_malkovich.jpg; path = artists_pictures/john_malkovich.jpg; sourceTree = "<group>"; };
+		15BEBE161AACFA630041077E /* johnny_depp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = johnny_depp.jpg; path = artists_pictures/johnny_depp.jpg; sourceTree = "<group>"; };
+		15BEBE171AACFA630041077E /* joseph_gordon-levitt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "joseph_gordon-levitt.jpg"; path = "artists_pictures/joseph_gordon-levitt.jpg"; sourceTree = "<group>"; };
+		15BEBE181AACFA630041077E /* jude_law.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jude_law.jpg; path = artists_pictures/jude_law.jpg; sourceTree = "<group>"; };
+		15BEBE191AACFA630041077E /* justin_timberlake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = justin_timberlake.jpg; path = artists_pictures/justin_timberlake.jpg; sourceTree = "<group>"; };
+		15BEBE1A1AACFA630041077E /* keanu_reeves.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = keanu_reeves.jpg; path = artists_pictures/keanu_reeves.jpg; sourceTree = "<group>"; };
+		15BEBE1B1AACFA630041077E /* ken_jeong.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ken_jeong.jpg; path = artists_pictures/ken_jeong.jpg; sourceTree = "<group>"; };
+		15BEBE1C1AACFA630041077E /* kevin_spacey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = kevin_spacey.jpg; path = artists_pictures/kevin_spacey.jpg; sourceTree = "<group>"; };
+		15BEBE1D1AACFA630041077E /* leonardo_dicaprio.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = leonardo_dicaprio.jpg; path = artists_pictures/leonardo_dicaprio.jpg; sourceTree = "<group>"; };
+		15BEBE1E1AACFA630041077E /* liam_neeson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = liam_neeson.jpg; path = artists_pictures/liam_neeson.jpg; sourceTree = "<group>"; };
+		15BEBE1F1AACFA630041077E /* matt_damon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = matt_damon.jpg; path = artists_pictures/matt_damon.jpg; sourceTree = "<group>"; };
+		15BEBE201AACFA630041077E /* matthew_mcconaughey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = matthew_mcconaughey.jpg; path = artists_pictures/matthew_mcconaughey.jpg; sourceTree = "<group>"; };
+		15BEBE211AACFA630041077E /* morgan_freeman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = morgan_freeman.jpg; path = artists_pictures/morgan_freeman.jpg; sourceTree = "<group>"; };
+		15BEBE221AACFA630041077E /* nicolas_cage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = nicolas_cage.jpg; path = artists_pictures/nicolas_cage.jpg; sourceTree = "<group>"; };
+		15BEBE231AACFA630041077E /* robert_de_niro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = robert_de_niro.jpg; path = artists_pictures/robert_de_niro.jpg; sourceTree = "<group>"; };
+		15BEBE241AACFA630041077E /* robert_downey_jr.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = robert_downey_jr.jpg; path = artists_pictures/robert_downey_jr.jpg; sourceTree = "<group>"; };
+		15BEBE251AACFA630041077E /* robert_pattinson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = robert_pattinson.jpg; path = artists_pictures/robert_pattinson.jpg; sourceTree = "<group>"; };
+		15BEBE261AACFA630041077E /* robin_williams.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = robin_williams.jpg; path = artists_pictures/robin_williams.jpg; sourceTree = "<group>"; };
+		15BEBE271AACFA630041077E /* ryan_gosling.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ryan_gosling.jpg; path = artists_pictures/ryan_gosling.jpg; sourceTree = "<group>"; };
+		15BEBE281AACFA630041077E /* ryan_reynolds.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ryan_reynolds.jpg; path = artists_pictures/ryan_reynolds.jpg; sourceTree = "<group>"; };
+		15BEBE291AACFA630041077E /* samuel_l._jackson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = samuel_l._jackson.jpg; path = artists_pictures/samuel_l._jackson.jpg; sourceTree = "<group>"; };
+		15BEBE2A1AACFA630041077E /* sean_penn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sean_penn.jpg; path = artists_pictures/sean_penn.jpg; sourceTree = "<group>"; };
+		15BEBE2B1AACFA630041077E /* steve_carell.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = steve_carell.jpg; path = artists_pictures/steve_carell.jpg; sourceTree = "<group>"; };
+		15BEBE2C1AACFA630041077E /* taylor_lautner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = taylor_lautner.jpg; path = artists_pictures/taylor_lautner.jpg; sourceTree = "<group>"; };
+		15BEBE2D1AACFA630041077E /* tom_cruise.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tom_cruise.jpg; path = artists_pictures/tom_cruise.jpg; sourceTree = "<group>"; };
+		15BEBE2E1AACFA630041077E /* tom_hanks.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tom_hanks.jpg; path = artists_pictures/tom_hanks.jpg; sourceTree = "<group>"; };
+		15BEBE2F1AACFA630041077E /* will_smith.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = will_smith.jpg; path = artists_pictures/will_smith.jpg; sourceTree = "<group>"; };
+		15BEBE301AACFA630041077E /* zac_efron.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = zac_efron.jpg; path = artists_pictures/zac_efron.jpg; sourceTree = "<group>"; };
+		15BEBE721AAD5E3C0041077E /* switch-camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "switch-camera.png"; path = "Resources/switch-camera.png"; sourceTree = "<group>"; };
+		15BEBE761AAD64AE0041077E /* starface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = starface.png; path = Resources/starface.png; sourceTree = "<group>"; };
+		15BEBE781AAD68C70041077E /* button men on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button men on.png"; path = "Resources/button men on.png"; sourceTree = "<group>"; };
+		15BEBE791AAD68C70041077E /* button women on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button women on.png"; path = "Resources/button women on.png"; sourceTree = "<group>"; };
+		15CBBBF21AA55E9C007BEA02 /* Starface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Starface.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15CBBBF61AA55E9C007BEA02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15CBBBF71AA55E9C007BEA02 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		15CBBBF91AA55E9C007BEA02 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		15CBBBFA1AA55E9C007BEA02 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		15CBBBFC1AA55E9C007BEA02 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		15CBBBFD1AA55E9C007BEA02 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		15CBBC001AA55E9C007BEA02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		15CBBC021AA55E9C007BEA02 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		15CBBC051AA55E9C007BEA02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		15CBBC101AA55E9C007BEA02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15CBBC111AA55E9D007BEA02 /* StarfaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StarfaceTests.m; sourceTree = "<group>"; };
+		15CBBC1B1AA56692007BEA02 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		15CBBC1D1AA56698007BEA02 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		15CBBC1F1AA5669D007BEA02 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		15CBBC211AA566A4007BEA02 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		15CBBC231AA566AA007BEA02 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		15CBBC251AA566B1007BEA02 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		15CBBC271AA566B7007BEA02 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		15CBBC291AA566BC007BEA02 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		15CBBC2B1AA566D7007BEA02 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		15CBBC2D1AA566F7007BEA02 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		15CBBC301AA66466007BEA02 /* ConvnetClassifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvnetClassifier.h; sourceTree = "<group>"; };
+		15CBBC311AA6647F007BEA02 /* ConvnetClassifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConvnetClassifier.m; sourceTree = "<group>"; };
+		15CBBC471AA669CA007BEA02 /* ccv_algebra.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ccv_algebra.c; path = ccv/ccv/ccv_algebra.c; sourceTree = "<group>"; };
+		15CBBC481AA669CA007BEA02 /* ccv_basic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ccv_basic.c; path = ccv/ccv/ccv_basic.c; sourceTree = "<group>"; };
+		15CBBC491AA669CA007BEA02 /* ccv_bbf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ccv_bbf.c; path = ccv/ccv/ccv_bbf.c; sourceTree = "<group>"; };
+		15CBBC4A1AA669CA007BEA02 /* ccv_cache.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ccv_cache.c; path = ccv/ccv/ccv_cache.c; sourceTree = "<group>"; };
+		15CBBC4B1AA669CA007BEA02 /* ccv_classic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ccv_classic.c; path = ccv/ccv/ccv_classic.c; sourceTree = "<group>"; };
+		15CBBC4C1AA669CA007BEA02 /* ccv_convnet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ccv_convnet.c; path = ccv/ccv/ccv_convnet.c; sourceTree = "<group>"; };
+		15CBBC4D1AA669CA007BEA02 /* ccv_daisy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ccv_daisy.c; path = ccv/ccv/ccv_daisy.c; sourceTree = "<group>"; };
+		15CBBC4E1AA669CA007BEA02 /* ccv_dpm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ccv_dpm.c; path = ccv/ccv/ccv_dpm.c; sourceTree = "<group>"; };
+		15CBBC4F1AA669CA007BEA02 /* ccv_extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ccv_extra.h; path = ccv/ccv/ccv_extra.h; sourceTree = "<group>"; };
+		15CBBC501AA669CA007BEA02 /* ccv_ferns.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ccv_ferns.c; path = ccv/ccv/ccv_ferns.c; sourceTree = "<group>"; };
+		15CBBC511AA669CA007BEA02 /* ccv_icf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ccv_icf.c; path = ccv/ccv/ccv_icf.c; sourceTree = "<group>"; };
+		15CBBC521AA669CA007BEA02 /* ccv_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ccv_internal.h; path = ccv/ccv/ccv_internal.h; sourceTree = "<group>"; };
+		15CBBC531AA669CA007BEA02 /* ccv_io.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ccv_io.c; path = ccv/ccv/ccv_io.c; sourceTree = "<group>"; };
+		15CBBC541AA669CA007BEA02 /* ccv_memory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ccv_memory.c; path = ccv/ccv/ccv_memory.c; sourceTree = "<group>"; };
+		15CBBC551AA669CA007BEA02 /* ccv_mser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ccv_mser.c; path = ccv/ccv/ccv_mser.c; sourceTree = "<group>"; };
+		15CBBC561AA669CA007BEA02 /* ccv_numeric.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ccv_numeric.c; path = ccv/ccv/ccv_numeric.c; sourceTree = "<group>"; };
+		15CBBC571AA669CA007BEA02 /* ccv_resample.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ccv_resample.c; path = ccv/ccv/ccv_resample.c; sourceTree = "<group>"; };
+		15CBBC581AA669CA007BEA02 /* ccv_sift.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ccv_sift.c; path = ccv/ccv/ccv_sift.c; sourceTree = "<group>"; };
+		15CBBC591AA669CA007BEA02 /* ccv_sparse_coding.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ccv_sparse_coding.c; path = ccv/ccv/ccv_sparse_coding.c; sourceTree = "<group>"; };
+		15CBBC5A1AA669CA007BEA02 /* ccv_swt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ccv_swt.c; path = ccv/ccv/ccv_swt.c; sourceTree = "<group>"; };
+		15CBBC5B1AA669CA007BEA02 /* ccv_tld.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ccv_tld.c; path = ccv/ccv/ccv_tld.c; sourceTree = "<group>"; };
+		15CBBC5C1AA669CA007BEA02 /* ccv_transform.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ccv_transform.c; path = ccv/ccv/ccv_transform.c; sourceTree = "<group>"; };
+		15CBBC5D1AA669CA007BEA02 /* ccv_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ccv_util.c; path = ccv/ccv/ccv_util.c; sourceTree = "<group>"; };
+		15CBBC5E1AA669CA007BEA02 /* ccv-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ccv-Prefix.pch"; path = "ccv/ccv/ccv-Prefix.pch"; sourceTree = "<group>"; };
+		15CBBC5F1AA669CA007BEA02 /* ccv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ccv.h; path = ccv/ccv/ccv.h; sourceTree = "<group>"; };
+		15CDDE631AABC0C700B307AF /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		15CDDE641AABC0C700B307AF /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		15F435821ABD1E4500BF48E9 /* starface-women.wnid */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "starface-women.wnid"; path = "Resources/starface-women.wnid"; sourceTree = "<group>"; };
+		15F435851ABD1E8C00BF48E9 /* starface-men.wnid */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "starface-men.wnid"; path = "Resources/starface-men.wnid"; sourceTree = "<group>"; };
+		15F435871ABD367600BF48E9 /* starface-mobile-women.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "starface-mobile-women.sqlite3"; path = "Resources/starface-mobile-women.sqlite3"; sourceTree = "<group>"; };
+		15F435881ABD367600BF48E9 /* starface-mobile-men.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "starface-mobile-men.sqlite3"; path = "Resources/starface-mobile-men.sqlite3"; sourceTree = "<group>"; };
+		15F4358B1ABD57DD00BF48E9 /* adrien_brody.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = adrien_brody.jpg; path = artists_pictures/adrien_brody.jpg; sourceTree = "<group>"; };
+		15F4358C1ABD57DD00BF48E9 /* al_pacino.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = al_pacino.jpg; path = artists_pictures/al_pacino.jpg; sourceTree = "<group>"; };
+		15F4358D1ABD57DD00BF48E9 /* amanda_seyfried.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = amanda_seyfried.jpg; path = artists_pictures/amanda_seyfried.jpg; sourceTree = "<group>"; };
+		15F4358E1ABD57DD00BF48E9 /* amy_adams.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = amy_adams.jpg; path = artists_pictures/amy_adams.jpg; sourceTree = "<group>"; };
+		15F4358F1ABD57DD00BF48E9 /* angelina_jolie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = angelina_jolie.jpg; path = artists_pictures/angelina_jolie.jpg; sourceTree = "<group>"; };
+		15F435901ABD57DD00BF48E9 /* anna_kendrick.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = anna_kendrick.jpg; path = artists_pictures/anna_kendrick.jpg; sourceTree = "<group>"; };
+		15F435911ABD57DD00BF48E9 /* anne_hathaway.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = anne_hathaway.jpg; path = artists_pictures/anne_hathaway.jpg; sourceTree = "<group>"; };
+		15F435921ABD57DD00BF48E9 /* anthony_hopkins.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = anthony_hopkins.jpg; path = artists_pictures/anthony_hopkins.jpg; sourceTree = "<group>"; };
+		15F435931ABD57DD00BF48E9 /* ashton_kutcher.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ashton_kutcher.jpg; path = artists_pictures/ashton_kutcher.jpg; sourceTree = "<group>"; };
+		15F435941ABD57DD00BF48E9 /* ben_affleck.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ben_affleck.jpg; path = artists_pictures/ben_affleck.jpg; sourceTree = "<group>"; };
+		15F435951ABD57DD00BF48E9 /* benedict_cumberbatch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = benedict_cumberbatch.jpg; path = artists_pictures/benedict_cumberbatch.jpg; sourceTree = "<group>"; };
+		15F435961ABD57DD00BF48E9 /* benicio_del_toro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = benicio_del_toro.jpg; path = artists_pictures/benicio_del_toro.jpg; sourceTree = "<group>"; };
+		15F435971ABD57DD00BF48E9 /* bill_murray.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bill_murray.jpg; path = artists_pictures/bill_murray.jpg; sourceTree = "<group>"; };
+		15F435981ABD57DD00BF48E9 /* brad_pitt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = brad_pitt.jpg; path = artists_pictures/brad_pitt.jpg; sourceTree = "<group>"; };
+		15F435991ABD57DD00BF48E9 /* bradley_cooper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bradley_cooper.jpg; path = artists_pictures/bradley_cooper.jpg; sourceTree = "<group>"; };
+		15F4359A1ABD57DD00BF48E9 /* brittany_murphy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = brittany_murphy.jpg; path = artists_pictures/brittany_murphy.jpg; sourceTree = "<group>"; };
+		15F4359B1ABD57DD00BF48E9 /* bruce_willis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bruce_willis.jpg; path = artists_pictures/bruce_willis.jpg; sourceTree = "<group>"; };
+		15F4359C1ABD57DD00BF48E9 /* cameron_diaz.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cameron_diaz.jpg; path = artists_pictures/cameron_diaz.jpg; sourceTree = "<group>"; };
+		15F4359D1ABD57DD00BF48E9 /* carey_mulligan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = carey_mulligan.jpg; path = artists_pictures/carey_mulligan.jpg; sourceTree = "<group>"; };
+		15F4359E1ABD57DD00BF48E9 /* cate_blanchett.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cate_blanchett.jpg; path = artists_pictures/cate_blanchett.jpg; sourceTree = "<group>"; };
+		15F4359F1ABD57DD00BF48E9 /* catherine_zeta-jones.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "catherine_zeta-jones.jpg"; path = "artists_pictures/catherine_zeta-jones.jpg"; sourceTree = "<group>"; };
+		15F435A01ABD57DD00BF48E9 /* channing_tatum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = channing_tatum.jpg; path = artists_pictures/channing_tatum.jpg; sourceTree = "<group>"; };
+		15F435A11ABD57DD00BF48E9 /* charlize_theron.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = charlize_theron.jpg; path = artists_pictures/charlize_theron.jpg; sourceTree = "<group>"; };
+		15F435A21ABD57DD00BF48E9 /* chloe_grace_moretz.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = chloe_grace_moretz.jpg; path = artists_pictures/chloe_grace_moretz.jpg; sourceTree = "<group>"; };
+		15F435A31ABD57DD00BF48E9 /* christian_bale.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = christian_bale.jpg; path = artists_pictures/christian_bale.jpg; sourceTree = "<group>"; };
+		15F435A41ABD57DD00BF48E9 /* christina_ricci.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = christina_ricci.jpg; path = artists_pictures/christina_ricci.jpg; sourceTree = "<group>"; };
+		15F435A51ABD57DD00BF48E9 /* christoph_waltz.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = christoph_waltz.jpg; path = artists_pictures/christoph_waltz.jpg; sourceTree = "<group>"; };
+		15F435A61ABD57DD00BF48E9 /* clint_eastwood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = clint_eastwood.jpg; path = artists_pictures/clint_eastwood.jpg; sourceTree = "<group>"; };
+		15F435A71ABD57DD00BF48E9 /* clint_eastwood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = clint_eastwood.png; path = artists_pictures/clint_eastwood.png; sourceTree = "<group>"; };
+		15F435A81ABD57DD00BF48E9 /* colin_firth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = colin_firth.jpg; path = artists_pictures/colin_firth.jpg; sourceTree = "<group>"; };
+		15F435AA1ABD57DD00BF48E9 /* demi_moore.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = demi_moore.jpg; path = artists_pictures/demi_moore.jpg; sourceTree = "<group>"; };
+		15F435AB1ABD57DD00BF48E9 /* denzel_washington.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = denzel_washington.jpg; path = artists_pictures/denzel_washington.jpg; sourceTree = "<group>"; };
+		15F435AC1ABD57DD00BF48E9 /* dev_patel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dev_patel.jpg; path = artists_pictures/dev_patel.jpg; sourceTree = "<group>"; };
+		15F435AD1ABD57DD00BF48E9 /* drew_barrymore.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = drew_barrymore.jpg; path = artists_pictures/drew_barrymore.jpg; sourceTree = "<group>"; };
+		15F435AE1ABD57DD00BF48E9 /* dustin_hoffman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dustin_hoffman.jpg; path = artists_pictures/dustin_hoffman.jpg; sourceTree = "<group>"; };
+		15F435AF1ABD57DD00BF48E9 /* eddie_murphy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = eddie_murphy.jpg; path = artists_pictures/eddie_murphy.jpg; sourceTree = "<group>"; };
+		15F435B01ABD57DD00BF48E9 /* edward_norton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = edward_norton.jpg; path = artists_pictures/edward_norton.jpg; sourceTree = "<group>"; };
+		15F435B11ABD57DD00BF48E9 /* emma_stone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = emma_stone.jpg; path = artists_pictures/emma_stone.jpg; sourceTree = "<group>"; };
+		15F435B21ABD57DD00BF48E9 /* emma_thompson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = emma_thompson.jpg; path = artists_pictures/emma_thompson.jpg; sourceTree = "<group>"; };
+		15F435B31ABD57DD00BF48E9 /* emma_watson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = emma_watson.jpg; path = artists_pictures/emma_watson.jpg; sourceTree = "<group>"; };
+		15F435B41ABD57DD00BF48E9 /* evan_rachel_wood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = evan_rachel_wood.jpg; path = artists_pictures/evan_rachel_wood.jpg; sourceTree = "<group>"; };
+		15F435B51ABD57DD00BF48E9 /* forest_whitaker.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = forest_whitaker.jpg; path = artists_pictures/forest_whitaker.jpg; sourceTree = "<group>"; };
+		15F435B61ABD57DD00BF48E9 /* gary_oldman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = gary_oldman.jpg; path = artists_pictures/gary_oldman.jpg; sourceTree = "<group>"; };
+		15F435B71ABD57DD00BF48E9 /* george_clooney.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = george_clooney.jpg; path = artists_pictures/george_clooney.jpg; sourceTree = "<group>"; };
+		15F435B81ABD57DD00BF48E9 /* glenn_close.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = glenn_close.jpg; path = artists_pictures/glenn_close.jpg; sourceTree = "<group>"; };
+		15F435B91ABD57DD00BF48E9 /* gwyneth_paltrow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = gwyneth_paltrow.jpg; path = artists_pictures/gwyneth_paltrow.jpg; sourceTree = "<group>"; };
+		15F435BA1ABD57DD00BF48E9 /* halle_berry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = halle_berry.jpg; path = artists_pictures/halle_berry.jpg; sourceTree = "<group>"; };
+		15F435BB1ABD57DD00BF48E9 /* harrison_ford.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = harrison_ford.jpg; path = artists_pictures/harrison_ford.jpg; sourceTree = "<group>"; };
+		15F435BC1ABD57DD00BF48E9 /* heath_ledger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = heath_ledger.jpg; path = artists_pictures/heath_ledger.jpg; sourceTree = "<group>"; };
+		15F435BD1ABD57DD00BF48E9 /* helen_hunt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = helen_hunt.jpg; path = artists_pictures/helen_hunt.jpg; sourceTree = "<group>"; };
+		15F435BE1ABD57DD00BF48E9 /* helena_bonham_carter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = helena_bonham_carter.jpg; path = artists_pictures/helena_bonham_carter.jpg; sourceTree = "<group>"; };
+		15F435BF1ABD57DD00BF48E9 /* hilary_swank.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hilary_swank.jpg; path = artists_pictures/hilary_swank.jpg; sourceTree = "<group>"; };
+		15F435C01ABD57DD00BF48E9 /* hugh_jackman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hugh_jackman.jpg; path = artists_pictures/hugh_jackman.jpg; sourceTree = "<group>"; };
+		15F435C11ABD57DD00BF48E9 /* jack_nicholson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jack_nicholson.jpg; path = artists_pictures/jack_nicholson.jpg; sourceTree = "<group>"; };
+		15F435C21ABD57DD00BF48E9 /* jackie_chan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jackie_chan.jpg; path = artists_pictures/jackie_chan.jpg; sourceTree = "<group>"; };
+		15F435C31ABD57DD00BF48E9 /* jamie_foxx.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jamie_foxx.jpg; path = artists_pictures/jamie_foxx.jpg; sourceTree = "<group>"; };
+		15F435C41ABD57DD00BF48E9 /* javier_bardem.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = javier_bardem.jpg; path = artists_pictures/javier_bardem.jpg; sourceTree = "<group>"; };
+		15F435C51ABD57DD00BF48E9 /* jean_dujardin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jean_dujardin.jpg; path = artists_pictures/jean_dujardin.jpg; sourceTree = "<group>"; };
+		15F435C61ABD57DD00BF48E9 /* jeff_bridges.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jeff_bridges.jpg; path = artists_pictures/jeff_bridges.jpg; sourceTree = "<group>"; };
+		15F435C71ABD57DD00BF48E9 /* jennifer_aniston.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jennifer_aniston.jpg; path = artists_pictures/jennifer_aniston.jpg; sourceTree = "<group>"; };
+		15F435C81ABD57DD00BF48E9 /* jennifer_lawrence.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jennifer_lawrence.jpg; path = artists_pictures/jennifer_lawrence.jpg; sourceTree = "<group>"; };
+		15F435C91ABD57DD00BF48E9 /* jessica_alba.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jessica_alba.jpg; path = artists_pictures/jessica_alba.jpg; sourceTree = "<group>"; };
+		15F435CA1ABD57DD00BF48E9 /* jet_li.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jet_li.jpg; path = artists_pictures/jet_li.jpg; sourceTree = "<group>"; };
+		15F435CB1ABD57DD00BF48E9 /* jim_carrey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jim_carrey.jpg; path = artists_pictures/jim_carrey.jpg; sourceTree = "<group>"; };
+		15F435CC1ABD57DD00BF48E9 /* joaquin_phoenix.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = joaquin_phoenix.jpg; path = artists_pictures/joaquin_phoenix.jpg; sourceTree = "<group>"; };
+		15F435CD1ABD57DD00BF48E9 /* jodie_foster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jodie_foster.jpg; path = artists_pictures/jodie_foster.jpg; sourceTree = "<group>"; };
+		15F435CE1ABD57DD00BF48E9 /* john_malkovich.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = john_malkovich.jpg; path = artists_pictures/john_malkovich.jpg; sourceTree = "<group>"; };
+		15F435CF1ABD57DD00BF48E9 /* johnny_depp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = johnny_depp.jpg; path = artists_pictures/johnny_depp.jpg; sourceTree = "<group>"; };
+		15F435D01ABD57DD00BF48E9 /* joseph_gordon-levitt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "joseph_gordon-levitt.jpg"; path = "artists_pictures/joseph_gordon-levitt.jpg"; sourceTree = "<group>"; };
+		15F435D11ABD57DD00BF48E9 /* jude_law.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jude_law.jpg; path = artists_pictures/jude_law.jpg; sourceTree = "<group>"; };
+		15F435D21ABD57DD00BF48E9 /* julia_roberts.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = julia_roberts.jpg; path = artists_pictures/julia_roberts.jpg; sourceTree = "<group>"; };
+		15F435D31ABD57DD00BF48E9 /* julianne_moore.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = julianne_moore.jpg; path = artists_pictures/julianne_moore.jpg; sourceTree = "<group>"; };
+		15F435D41ABD57DD00BF48E9 /* justin_timberlake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = justin_timberlake.jpg; path = artists_pictures/justin_timberlake.jpg; sourceTree = "<group>"; };
+		15F435D51ABD57DD00BF48E9 /* kate_winslet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = kate_winslet.jpg; path = artists_pictures/kate_winslet.jpg; sourceTree = "<group>"; };
+		15F435D61ABD57DD00BF48E9 /* katherine_heigl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = katherine_heigl.jpg; path = artists_pictures/katherine_heigl.jpg; sourceTree = "<group>"; };
+		15F435D71ABD57DD00BF48E9 /* keanu_reeves.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = keanu_reeves.jpg; path = artists_pictures/keanu_reeves.jpg; sourceTree = "<group>"; };
+		15F435D81ABD57DD00BF48E9 /* keira_knightley.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = keira_knightley.jpg; path = artists_pictures/keira_knightley.jpg; sourceTree = "<group>"; };
+		15F435D91ABD57DD00BF48E9 /* ken_jeong.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ken_jeong.jpg; path = artists_pictures/ken_jeong.jpg; sourceTree = "<group>"; };
+		15F435DA1ABD57DD00BF48E9 /* kerry_washington.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = kerry_washington.jpg; path = artists_pictures/kerry_washington.jpg; sourceTree = "<group>"; };
+		15F435DB1ABD57DD00BF48E9 /* kevin_spacey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = kevin_spacey.jpg; path = artists_pictures/kevin_spacey.jpg; sourceTree = "<group>"; };
+		15F435DC1ABD57DD00BF48E9 /* kirsten_dunst.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = kirsten_dunst.jpg; path = artists_pictures/kirsten_dunst.jpg; sourceTree = "<group>"; };
+		15F435DD1ABD57DD00BF48E9 /* kristen_stewart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = kristen_stewart.jpg; path = artists_pictures/kristen_stewart.jpg; sourceTree = "<group>"; };
+		15F435DE1ABD57DD00BF48E9 /* laura_linney .jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "laura_linney .jpg"; path = "artists_pictures/laura_linney .jpg"; sourceTree = "<group>"; };
+		15F435DF1ABD57DD00BF48E9 /* leonardo_dicaprio.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = leonardo_dicaprio.jpg; path = artists_pictures/leonardo_dicaprio.jpg; sourceTree = "<group>"; };
+		15F435E01ABD57DD00BF48E9 /* liam_neeson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = liam_neeson.jpg; path = artists_pictures/liam_neeson.jpg; sourceTree = "<group>"; };
+		15F435E11ABD57DD00BF48E9 /* liv_tyler.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = liv_tyler.jpg; path = artists_pictures/liv_tyler.jpg; sourceTree = "<group>"; };
+		15F435E21ABD57DD00BF48E9 /* lucy_liu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lucy_liu.jpg; path = artists_pictures/lucy_liu.jpg; sourceTree = "<group>"; };
+		15F435E31ABD57DD00BF48E9 /* marion_cotillard.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = marion_cotillard.jpg; path = artists_pictures/marion_cotillard.jpg; sourceTree = "<group>"; };
+		15F435E41ABD57DD00BF48E9 /* matt_damon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = matt_damon.jpg; path = artists_pictures/matt_damon.jpg; sourceTree = "<group>"; };
+		15F435E51ABD57DD00BF48E9 /* matthew_mcconaughey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = matthew_mcconaughey.jpg; path = artists_pictures/matthew_mcconaughey.jpg; sourceTree = "<group>"; };
+		15F435E61ABD57DD00BF48E9 /* meryl_streep.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = meryl_streep.jpg; path = artists_pictures/meryl_streep.jpg; sourceTree = "<group>"; };
+		15F435E71ABD57DD00BF48E9 /* michelle_pfeiffer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = michelle_pfeiffer.jpg; path = artists_pictures/michelle_pfeiffer.jpg; sourceTree = "<group>"; };
+		15F435E81ABD57DD00BF48E9 /* michelle_williams.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = michelle_williams.jpg; path = artists_pictures/michelle_williams.jpg; sourceTree = "<group>"; };
+		15F435E91ABD57DD00BF48E9 /* mila_kunis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mila_kunis.jpg; path = artists_pictures/mila_kunis.jpg; sourceTree = "<group>"; };
+		15F435EA1ABD57DD00BF48E9 /* mindy_kaling.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mindy_kaling.jpg; path = artists_pictures/mindy_kaling.jpg; sourceTree = "<group>"; };
+		15F435EB1ABD57DD00BF48E9 /* morgan_freeman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = morgan_freeman.jpg; path = artists_pictures/morgan_freeman.jpg; sourceTree = "<group>"; };
+		15F435EC1ABD57DD00BF48E9 /* naomi_watts.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = naomi_watts.jpg; path = artists_pictures/naomi_watts.jpg; sourceTree = "<group>"; };
+		15F435ED1ABD57DD00BF48E9 /* natalie_portman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = natalie_portman.jpg; path = artists_pictures/natalie_portman.jpg; sourceTree = "<group>"; };
+		15F435EE1ABD57DD00BF48E9 /* nicolas_cage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = nicolas_cage.jpg; path = artists_pictures/nicolas_cage.jpg; sourceTree = "<group>"; };
+		15F435EF1ABD57DD00BF48E9 /* nicole_kidman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = nicole_kidman.jpg; path = artists_pictures/nicole_kidman.jpg; sourceTree = "<group>"; };
+		15F435F01ABD57DD00BF48E9 /* penelope_cruz.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = penelope_cruz.jpg; path = artists_pictures/penelope_cruz.jpg; sourceTree = "<group>"; };
+		15F435F11ABD57DD00BF48E9 /* rachel_mcadams.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rachel_mcadams.jpg; path = artists_pictures/rachel_mcadams.jpg; sourceTree = "<group>"; };
+		15F435F21ABD57DD00BF48E9 /* reese_witherspoon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = reese_witherspoon.jpg; path = artists_pictures/reese_witherspoon.jpg; sourceTree = "<group>"; };
+		15F435F31ABD57DD00BF48E9 /* robert_de_niro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = robert_de_niro.jpg; path = artists_pictures/robert_de_niro.jpg; sourceTree = "<group>"; };
+		15F435F41ABD57DD00BF48E9 /* robert_downey_jr.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = robert_downey_jr.jpg; path = artists_pictures/robert_downey_jr.jpg; sourceTree = "<group>"; };
+		15F435F51ABD57DD00BF48E9 /* robert_pattinson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = robert_pattinson.jpg; path = artists_pictures/robert_pattinson.jpg; sourceTree = "<group>"; };
+		15F435F61ABD57DD00BF48E9 /* robin_williams.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = robin_williams.jpg; path = artists_pictures/robin_williams.jpg; sourceTree = "<group>"; };
+		15F435F71ABD57DD00BF48E9 /* rosario_dawson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rosario_dawson.jpg; path = artists_pictures/rosario_dawson.jpg; sourceTree = "<group>"; };
+		15F435F81ABD57DD00BF48E9 /* ryan_gosling.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ryan_gosling.jpg; path = artists_pictures/ryan_gosling.jpg; sourceTree = "<group>"; };
+		15F435F91ABD57DD00BF48E9 /* ryan_reynolds.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ryan_reynolds.jpg; path = artists_pictures/ryan_reynolds.jpg; sourceTree = "<group>"; };
+		15F435FA1ABD57DD00BF48E9 /* samuel_l._jackson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = samuel_l._jackson.jpg; path = artists_pictures/samuel_l._jackson.jpg; sourceTree = "<group>"; };
+		15F435FB1ABD57DD00BF48E9 /* samuel_l.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = samuel_l.jpg; path = artists_pictures/samuel_l.jpg; sourceTree = "<group>"; };
+		15F435FC1ABD57DD00BF48E9 /* sandra_bullock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sandra_bullock.jpg; path = artists_pictures/sandra_bullock.jpg; sourceTree = "<group>"; };
+		15F435FD1ABD57DD00BF48E9 /* scarlett_johansson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = scarlett_johansson.jpg; path = artists_pictures/scarlett_johansson.jpg; sourceTree = "<group>"; };
+		15F435FE1ABD57DD00BF48E9 /* sean_penn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sean_penn.jpg; path = artists_pictures/sean_penn.jpg; sourceTree = "<group>"; };
+		15F435FF1ABD57DD00BF48E9 /* sharon_stone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sharon_stone.jpg; path = artists_pictures/sharon_stone.jpg; sourceTree = "<group>"; };
+		15F436001ABD57DD00BF48E9 /* sigourney_weaver.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sigourney_weaver.jpg; path = artists_pictures/sigourney_weaver.jpg; sourceTree = "<group>"; };
+		15F436011ABD57DD00BF48E9 /* steve_carell.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = steve_carell.jpg; path = artists_pictures/steve_carell.jpg; sourceTree = "<group>"; };
+		15F436021ABD57DD00BF48E9 /* taylor_lautner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = taylor_lautner.jpg; path = artists_pictures/taylor_lautner.jpg; sourceTree = "<group>"; };
+		15F436031ABD57DD00BF48E9 /* tom_cruise.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tom_cruise.jpg; path = artists_pictures/tom_cruise.jpg; sourceTree = "<group>"; };
+		15F436041ABD57DD00BF48E9 /* tom_hanks.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tom_hanks.jpg; path = artists_pictures/tom_hanks.jpg; sourceTree = "<group>"; };
+		15F436051ABD57DD00BF48E9 /* uma_thurman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = uma_thurman.jpg; path = artists_pictures/uma_thurman.jpg; sourceTree = "<group>"; };
+		15F436061ABD57DD00BF48E9 /* will_smith.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = will_smith.jpg; path = artists_pictures/will_smith.jpg; sourceTree = "<group>"; };
+		15F436071ABD57DD00BF48E9 /* winona_ryder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = winona_ryder.jpg; path = artists_pictures/winona_ryder.jpg; sourceTree = "<group>"; };
+		15F436081ABD57DD00BF48E9 /* zac_efron.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = zac_efron.jpg; path = artists_pictures/zac_efron.jpg; sourceTree = "<group>"; };
+		15F436091ABD57DD00BF48E9 /* zooey_deschanel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = zooey_deschanel.jpg; path = artists_pictures/zooey_deschanel.jpg; sourceTree = "<group>"; };
+		15FF50911AAFFD2E0039A3B6 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15CBBBEF1AA55E9C007BEA02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1516F5CD1AA66B7800C70341 /* libsqlite3.dylib in Frameworks */,
+				15CBBC1C1AA56692007BEA02 /* ImageIO.framework in Frameworks */,
+				15CBBC1E1AA56698007BEA02 /* QuartzCore.framework in Frameworks */,
+				15CBBC201AA5669D007BEA02 /* CoreMedia.framework in Frameworks */,
+				15CBBC221AA566A4007BEA02 /* AssetsLibrary.framework in Frameworks */,
+				15CBBC2E1AA566F7007BEA02 /* CoreImage.framework in Frameworks */,
+				15CBBC241AA566AA007BEA02 /* AVFoundation.framework in Frameworks */,
+				15CBBC2C1AA566D7007BEA02 /* CoreVideo.framework in Frameworks */,
+				15CBBC261AA566B1007BEA02 /* UIKit.framework in Frameworks */,
+				15CBBC281AA566B7007BEA02 /* Foundation.framework in Frameworks */,
+				15CBBC2A1AA566BC007BEA02 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1516F59C1AA66AF700C70341 /* third_party */ = {
+			isa = PBXGroup;
+			children = (
+				1516F5A41AA66B4200C70341 /* kissfft */,
+				1516F5B71AA66B4200C70341 /* sfmt */,
+				1516F5BF1AA66B4200C70341 /* sha1 */,
+				1516F59D1AA66B1E00C70341 /* dsfmt */,
+			);
+			name = third_party;
+			sourceTree = "<group>";
+		};
+		1516F59D1AA66B1E00C70341 /* dsfmt */ = {
+			isa = PBXGroup;
+			children = (
+				1516F59E1AA66B1E00C70341 /* dSFMT-common.h */,
+				1516F59F1AA66B1E00C70341 /* dSFMT-params.h */,
+				1516F5A01AA66B1E00C70341 /* dSFMT-params19937.h */,
+				1516F5A11AA66B1E00C70341 /* dSFMT.c */,
+				1516F5A21AA66B1E00C70341 /* dSFMT.h */,
+			);
+			name = dsfmt;
+			path = ccv/ccv/3rdparty/dsfmt;
+			sourceTree = "<group>";
+		};
+		1516F5A41AA66B4200C70341 /* kissfft */ = {
+			isa = PBXGroup;
+			children = (
+				1516F5A51AA66B4200C70341 /* _kiss_fft_guts.h */,
+				1516F5A61AA66B4200C70341 /* _kissf_fft_guts.h */,
+				1516F5A71AA66B4200C70341 /* kiss_fft.c */,
+				1516F5A81AA66B4200C70341 /* kiss_fft.h */,
+				1516F5A91AA66B4200C70341 /* kiss_fftnd.c */,
+				1516F5AA1AA66B4200C70341 /* kiss_fftnd.h */,
+				1516F5AB1AA66B4200C70341 /* kiss_fftndr.c */,
+				1516F5AC1AA66B4200C70341 /* kiss_fftndr.h */,
+				1516F5AD1AA66B4200C70341 /* kiss_fftr.c */,
+				1516F5AE1AA66B4200C70341 /* kiss_fftr.h */,
+				1516F5AF1AA66B4200C70341 /* kissf_fft.c */,
+				1516F5B01AA66B4200C70341 /* kissf_fft.h */,
+				1516F5B11AA66B4200C70341 /* kissf_fftnd.c */,
+				1516F5B21AA66B4200C70341 /* kissf_fftnd.h */,
+				1516F5B31AA66B4200C70341 /* kissf_fftndr.c */,
+				1516F5B41AA66B4200C70341 /* kissf_fftndr.h */,
+				1516F5B51AA66B4200C70341 /* kissf_fftr.c */,
+				1516F5B61AA66B4200C70341 /* kissf_fftr.h */,
+			);
+			name = kissfft;
+			path = ccv/ccv/3rdparty/kissfft;
+			sourceTree = "<group>";
+		};
+		1516F5B71AA66B4200C70341 /* sfmt */ = {
+			isa = PBXGroup;
+			children = (
+				1516F5B81AA66B4200C70341 /* SFMT-alti.h */,
+				1516F5B91AA66B4200C70341 /* SFMT-common.h */,
+				1516F5BA1AA66B4200C70341 /* SFMT-params.h */,
+				1516F5BB1AA66B4200C70341 /* SFMT-params19937.h */,
+				1516F5BC1AA66B4200C70341 /* SFMT-sse2.h */,
+				1516F5BD1AA66B4200C70341 /* SFMT.c */,
+				1516F5BE1AA66B4200C70341 /* SFMT.h */,
+			);
+			name = sfmt;
+			path = ccv/ccv/3rdparty/sfmt;
+			sourceTree = "<group>";
+		};
+		1516F5BF1AA66B4200C70341 /* sha1 */ = {
+			isa = PBXGroup;
+			children = (
+				1516F5C01AA66B4200C70341 /* sha1.c */,
+				1516F5C11AA66B4200C70341 /* sha1.h */,
+			);
+			name = sha1;
+			path = ccv/ccv/3rdparty/sha1;
+			sourceTree = "<group>";
+		};
+		1516F5CE1AA6B50500C70341 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				15F435871ABD367600BF48E9 /* starface-mobile-women.sqlite3 */,
+				15F435881ABD367600BF48E9 /* starface-mobile-men.sqlite3 */,
+				15F435851ABD1E8C00BF48E9 /* starface-men.wnid */,
+				15F435821ABD1E4500BF48E9 /* starface-women.wnid */,
+				15BEBE781AAD68C70041077E /* button men on.png */,
+				15BEBE791AAD68C70041077E /* button women on.png */,
+				15BEBE761AAD64AE0041077E /* starface.png */,
+				15BEBE721AAD5E3C0041077E /* switch-camera.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		15CBBBE91AA55E9C007BEA02 = {
+			isa = PBXGroup;
+			children = (
+				15FF50911AAFFD2E0039A3B6 /* Media.xcassets */,
+				15F10FC51AAC39A8000D2269 /* Artist Pictures */,
+				1516F5CE1AA6B50500C70341 /* Resources */,
+				15CBBC331AA6678A007BEA02 /* ccv */,
+				15CBBBF41AA55E9C007BEA02 /* Starface */,
+				15CBBC0E1AA55E9C007BEA02 /* StarfaceTests */,
+				15CBBBF31AA55E9C007BEA02 /* Products */,
+				15CBBC2F1AA56716007BEA02 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		15CBBBF31AA55E9C007BEA02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15CBBBF21AA55E9C007BEA02 /* Starface.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15CBBBF41AA55E9C007BEA02 /* Starface */ = {
+			isa = PBXGroup;
+			children = (
+				15CBBBF51AA55E9C007BEA02 /* Supporting Files */,
+				15CBBBF91AA55E9C007BEA02 /* AppDelegate.h */,
+				15CBBBFA1AA55E9C007BEA02 /* AppDelegate.m */,
+				15CBBBFD1AA55E9C007BEA02 /* ViewController.m */,
+				15CBBBFC1AA55E9C007BEA02 /* ViewController.h */,
+				15CBBC301AA66466007BEA02 /* ConvnetClassifier.h */,
+				15CBBC311AA6647F007BEA02 /* ConvnetClassifier.m */,
+				15CBBBFF1AA55E9C007BEA02 /* Main.storyboard */,
+				15CBBC041AA55E9C007BEA02 /* LaunchScreen.xib */,
+				15CBBC021AA55E9C007BEA02 /* Images.xcassets */,
+				1516F5DB1AA6D08F00C70341 /* ArtistsData.m */,
+				1516F5DD1AA6D09E00C70341 /* ArtistsData.h */,
+				15CDDE631AABC0C700B307AF /* PhotoViewController.h */,
+				15CDDE641AABC0C700B307AF /* PhotoViewController.m */,
+			);
+			path = Starface;
+			sourceTree = "<group>";
+		};
+		15CBBBF51AA55E9C007BEA02 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				15CBBBF61AA55E9C007BEA02 /* Info.plist */,
+				15CBBBF71AA55E9C007BEA02 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		15CBBC0E1AA55E9C007BEA02 /* StarfaceTests */ = {
+			isa = PBXGroup;
+			children = (
+				15CBBC111AA55E9D007BEA02 /* StarfaceTests.m */,
+				15CBBC0F1AA55E9C007BEA02 /* Supporting Files */,
+			);
+			path = StarfaceTests;
+			sourceTree = "<group>";
+		};
+		15CBBC0F1AA55E9C007BEA02 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				15CBBC101AA55E9C007BEA02 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		15CBBC2F1AA56716007BEA02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1516F5CC1AA66B7800C70341 /* libsqlite3.dylib */,
+				15CBBC2D1AA566F7007BEA02 /* CoreImage.framework */,
+				15CBBC2B1AA566D7007BEA02 /* CoreVideo.framework */,
+				15CBBC291AA566BC007BEA02 /* CoreGraphics.framework */,
+				15CBBC271AA566B7007BEA02 /* Foundation.framework */,
+				15CBBC251AA566B1007BEA02 /* UIKit.framework */,
+				15CBBC231AA566AA007BEA02 /* AVFoundation.framework */,
+				15CBBC211AA566A4007BEA02 /* AssetsLibrary.framework */,
+				15CBBC1F1AA5669D007BEA02 /* CoreMedia.framework */,
+				15CBBC1D1AA56698007BEA02 /* QuartzCore.framework */,
+				15CBBC1B1AA56692007BEA02 /* ImageIO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		15CBBC331AA6678A007BEA02 /* ccv */ = {
+			isa = PBXGroup;
+			children = (
+				1516F59C1AA66AF700C70341 /* third_party */,
+				15CBBC471AA669CA007BEA02 /* ccv_algebra.c */,
+				15CBBC481AA669CA007BEA02 /* ccv_basic.c */,
+				15CBBC491AA669CA007BEA02 /* ccv_bbf.c */,
+				15CBBC4A1AA669CA007BEA02 /* ccv_cache.c */,
+				15CBBC4B1AA669CA007BEA02 /* ccv_classic.c */,
+				15CBBC4C1AA669CA007BEA02 /* ccv_convnet.c */,
+				15CBBC4D1AA669CA007BEA02 /* ccv_daisy.c */,
+				15CBBC4E1AA669CA007BEA02 /* ccv_dpm.c */,
+				15CBBC4F1AA669CA007BEA02 /* ccv_extra.h */,
+				15CBBC501AA669CA007BEA02 /* ccv_ferns.c */,
+				15CBBC511AA669CA007BEA02 /* ccv_icf.c */,
+				15CBBC521AA669CA007BEA02 /* ccv_internal.h */,
+				15CBBC531AA669CA007BEA02 /* ccv_io.c */,
+				15CBBC541AA669CA007BEA02 /* ccv_memory.c */,
+				15CBBC551AA669CA007BEA02 /* ccv_mser.c */,
+				15CBBC561AA669CA007BEA02 /* ccv_numeric.c */,
+				15CBBC571AA669CA007BEA02 /* ccv_resample.c */,
+				15CBBC581AA669CA007BEA02 /* ccv_sift.c */,
+				15CBBC591AA669CA007BEA02 /* ccv_sparse_coding.c */,
+				15CBBC5A1AA669CA007BEA02 /* ccv_swt.c */,
+				15CBBC5B1AA669CA007BEA02 /* ccv_tld.c */,
+				15CBBC5C1AA669CA007BEA02 /* ccv_transform.c */,
+				15CBBC5D1AA669CA007BEA02 /* ccv_util.c */,
+				15CBBC5E1AA669CA007BEA02 /* ccv-Prefix.pch */,
+				15CBBC5F1AA669CA007BEA02 /* ccv.h */,
+			);
+			name = ccv;
+			sourceTree = "<group>";
+		};
+		15F10FC51AAC39A8000D2269 /* Artist Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				15F4358B1ABD57DD00BF48E9 /* adrien_brody.jpg */,
+				15F4358D1ABD57DD00BF48E9 /* amanda_seyfried.jpg */,
+				15F4358E1ABD57DD00BF48E9 /* amy_adams.jpg */,
+				15F4358F1ABD57DD00BF48E9 /* angelina_jolie.jpg */,
+				15F435901ABD57DD00BF48E9 /* anna_kendrick.jpg */,
+				15F435911ABD57DD00BF48E9 /* anne_hathaway.jpg */,
+				15F435921ABD57DD00BF48E9 /* anthony_hopkins.jpg */,
+				15F435941ABD57DD00BF48E9 /* ben_affleck.jpg */,
+				15F435961ABD57DD00BF48E9 /* benicio_del_toro.jpg */,
+				15F435981ABD57DD00BF48E9 /* brad_pitt.jpg */,
+				15F4359A1ABD57DD00BF48E9 /* brittany_murphy.jpg */,
+				15F4359B1ABD57DD00BF48E9 /* bruce_willis.jpg */,
+				15F4359C1ABD57DD00BF48E9 /* cameron_diaz.jpg */,
+				15F4359D1ABD57DD00BF48E9 /* carey_mulligan.jpg */,
+				15F4359E1ABD57DD00BF48E9 /* cate_blanchett.jpg */,
+				15F4359F1ABD57DD00BF48E9 /* catherine_zeta-jones.jpg */,
+				15F435A11ABD57DD00BF48E9 /* charlize_theron.jpg */,
+				15F435A21ABD57DD00BF48E9 /* chloe_grace_moretz.jpg */,
+				15F435A31ABD57DD00BF48E9 /* christian_bale.jpg */,
+				15F435A41ABD57DD00BF48E9 /* christina_ricci.jpg */,
+				15F435A61ABD57DD00BF48E9 /* clint_eastwood.jpg */,
+				15F435A71ABD57DD00BF48E9 /* clint_eastwood.png */,
+				1527CB071ABE98760040BA78 /* daniel_day-lewis.jpg */,
+				15F435AA1ABD57DD00BF48E9 /* demi_moore.jpg */,
+				15F435AC1ABD57DD00BF48E9 /* dev_patel.jpg */,
+				15F435AD1ABD57DD00BF48E9 /* drew_barrymore.jpg */,
+				15F435AF1ABD57DD00BF48E9 /* eddie_murphy.jpg */,
+				15F435B11ABD57DD00BF48E9 /* emma_stone.jpg */,
+				15F435B21ABD57DD00BF48E9 /* emma_thompson.jpg */,
+				15F435B31ABD57DD00BF48E9 /* emma_watson.jpg */,
+				15F435B41ABD57DD00BF48E9 /* evan_rachel_wood.jpg */,
+				15F435B51ABD57DD00BF48E9 /* forest_whitaker.jpg */,
+				15F435B71ABD57DD00BF48E9 /* george_clooney.jpg */,
+				15F435B81ABD57DD00BF48E9 /* glenn_close.jpg */,
+				15F435B91ABD57DD00BF48E9 /* gwyneth_paltrow.jpg */,
+				15F435BA1ABD57DD00BF48E9 /* halle_berry.jpg */,
+				15F435BC1ABD57DD00BF48E9 /* heath_ledger.jpg */,
+				15F435BD1ABD57DD00BF48E9 /* helen_hunt.jpg */,
+				15F435BE1ABD57DD00BF48E9 /* helena_bonham_carter.jpg */,
+				15F435BF1ABD57DD00BF48E9 /* hilary_swank.jpg */,
+				15F435C11ABD57DD00BF48E9 /* jack_nicholson.jpg */,
+				15F435C31ABD57DD00BF48E9 /* jamie_foxx.jpg */,
+				15F435C51ABD57DD00BF48E9 /* jean_dujardin.jpg */,
+				15F435C71ABD57DD00BF48E9 /* jennifer_aniston.jpg */,
+				15F435C81ABD57DD00BF48E9 /* jennifer_lawrence.jpg */,
+				15F435C91ABD57DD00BF48E9 /* jessica_alba.jpg */,
+				15F435CA1ABD57DD00BF48E9 /* jet_li.jpg */,
+				15F435CC1ABD57DD00BF48E9 /* joaquin_phoenix.jpg */,
+				15F435CD1ABD57DD00BF48E9 /* jodie_foster.jpg */,
+				15F435CF1ABD57DD00BF48E9 /* johnny_depp.jpg */,
+				15F435D11ABD57DD00BF48E9 /* jude_law.jpg */,
+				15F435D21ABD57DD00BF48E9 /* julia_roberts.jpg */,
+				15F435D31ABD57DD00BF48E9 /* julianne_moore.jpg */,
+				15F435D51ABD57DD00BF48E9 /* kate_winslet.jpg */,
+				15F435D61ABD57DD00BF48E9 /* katherine_heigl.jpg */,
+				15F435D71ABD57DD00BF48E9 /* keanu_reeves.jpg */,
+				15F435D81ABD57DD00BF48E9 /* keira_knightley.jpg */,
+				15F435DA1ABD57DD00BF48E9 /* kerry_washington.jpg */,
+				15F435DB1ABD57DD00BF48E9 /* kevin_spacey.jpg */,
+				15F435DC1ABD57DD00BF48E9 /* kirsten_dunst.jpg */,
+				15F435DD1ABD57DD00BF48E9 /* kristen_stewart.jpg */,
+				15F435DE1ABD57DD00BF48E9 /* laura_linney .jpg */,
+				15F435E01ABD57DD00BF48E9 /* liam_neeson.jpg */,
+				15F435E11ABD57DD00BF48E9 /* liv_tyler.jpg */,
+				15F435E21ABD57DD00BF48E9 /* lucy_liu.jpg */,
+				15F435E31ABD57DD00BF48E9 /* marion_cotillard.jpg */,
+				15F435E51ABD57DD00BF48E9 /* matthew_mcconaughey.jpg */,
+				15F435E61ABD57DD00BF48E9 /* meryl_streep.jpg */,
+				15F435E71ABD57DD00BF48E9 /* michelle_pfeiffer.jpg */,
+				15F435E81ABD57DD00BF48E9 /* michelle_williams.jpg */,
+				1545D59E1ABE521400F0897C /* milla_jovovich.jpg */,
+				15F435EA1ABD57DD00BF48E9 /* mindy_kaling.jpg */,
+				15F435EB1ABD57DD00BF48E9 /* morgan_freeman.jpg */,
+				15F435EC1ABD57DD00BF48E9 /* naomi_watts.jpg */,
+				15F435ED1ABD57DD00BF48E9 /* natalie_portman.jpg */,
+				15F435EF1ABD57DD00BF48E9 /* nicole_kidman.jpg */,
+				15F435F01ABD57DD00BF48E9 /* penelope_cruz.jpg */,
+				15F435F11ABD57DD00BF48E9 /* rachel_mcadams.jpg */,
+				15F435F21ABD57DD00BF48E9 /* reese_witherspoon.jpg */,
+				15F435F31ABD57DD00BF48E9 /* robert_de_niro.jpg */,
+				15F435F51ABD57DD00BF48E9 /* robert_pattinson.jpg */,
+				15F435F71ABD57DD00BF48E9 /* rosario_dawson.jpg */,
+				15F435F81ABD57DD00BF48E9 /* ryan_gosling.jpg */,
+				15F435FA1ABD57DD00BF48E9 /* samuel_l._jackson.jpg */,
+				15F435FB1ABD57DD00BF48E9 /* samuel_l.jpg */,
+				15F435FC1ABD57DD00BF48E9 /* sandra_bullock.jpg */,
+				15F435FD1ABD57DD00BF48E9 /* scarlett_johansson.jpg */,
+				15F435FF1ABD57DD00BF48E9 /* sharon_stone.jpg */,
+				15F436001ABD57DD00BF48E9 /* sigourney_weaver.jpg */,
+				15F436011ABD57DD00BF48E9 /* steve_carell.jpg */,
+				15F436031ABD57DD00BF48E9 /* tom_cruise.jpg */,
+				15F436051ABD57DD00BF48E9 /* uma_thurman.jpg */,
+				15F436061ABD57DD00BF48E9 /* will_smith.jpg */,
+				15F436071ABD57DD00BF48E9 /* winona_ryder.jpg */,
+				15F436091ABD57DD00BF48E9 /* zooey_deschanel.jpg */,
+				15BEBDF01AACFA630041077E /* adrien_brody.jpg */,
+				15BEBDF11AACFA630041077E /* al_pacino.jpg */,
+				15BEBDF21AACFA630041077E /* anthony_hopkins.jpg */,
+				15BEBDF31AACFA630041077E /* ashton_kutcher.jpg */,
+				15BEBDF41AACFA630041077E /* ben_affleck.jpg */,
+				15BEBDF51AACFA630041077E /* benedict_cumberbatch.jpg */,
+				15BEBDF61AACFA630041077E /* benicio_del_toro.jpg */,
+				15BEBDF71AACFA630041077E /* bill_murray.jpg */,
+				15BEBDF81AACFA630041077E /* brad_pitt.jpg */,
+				15BEBDF91AACFA630041077E /* bradley_cooper.jpg */,
+				15BEBDFA1AACFA630041077E /* bruce_willis.jpg */,
+				15BEBDFB1AACFA630041077E /* channing_tatum.jpg */,
+				15BEBDFC1AACFA630041077E /* christian_bale.jpg */,
+				15BEBDFD1AACFA630041077E /* christoph_waltz.jpg */,
+				15BEBDFE1AACFA630041077E /* clint_eastwood.png */,
+				15BEBDFF1AACFA630041077E /* colin_firth.jpg */,
+				15BEBE001AACFA630041077E /* daniel_day-lewis.jpg */,
+				15BEBE011AACFA630041077E /* denzel_washington.jpg */,
+				15BEBE021AACFA630041077E /* dev_patel.jpg */,
+				15BEBE031AACFA630041077E /* dustin_hoffman.jpg */,
+				15BEBE041AACFA630041077E /* eddie_murphy.jpg */,
+				15BEBE051AACFA630041077E /* edward_norton.jpg */,
+				15BEBE061AACFA630041077E /* forest_whitaker.jpg */,
+				15BEBE071AACFA630041077E /* gary_oldman.jpg */,
+				15BEBE081AACFA630041077E /* george_clooney.jpg */,
+				15BEBE091AACFA630041077E /* harrison_ford.jpg */,
+				15BEBE0A1AACFA630041077E /* heath_ledger.jpg */,
+				15BEBE0B1AACFA630041077E /* hugh_jackman.jpg */,
+				15BEBE0C1AACFA630041077E /* jack_nicholson.jpg */,
+				15BEBE0D1AACFA630041077E /* jackie_chan.jpg */,
+				15BEBE0E1AACFA630041077E /* jamie_foxx.jpg */,
+				15BEBE0F1AACFA630041077E /* javier_bardem.jpg */,
+				15BEBE101AACFA630041077E /* jean_dujardin.jpg */,
+				15BEBE111AACFA630041077E /* jeff_bridges.jpg */,
+				15BEBE121AACFA630041077E /* jet_li.jpg */,
+				15BEBE131AACFA630041077E /* jim_carrey.jpg */,
+				15BEBE141AACFA630041077E /* joaquin_phoenix.jpg */,
+				15BEBE151AACFA630041077E /* john_malkovich.jpg */,
+				15BEBE161AACFA630041077E /* johnny_depp.jpg */,
+				15BEBE171AACFA630041077E /* joseph_gordon-levitt.jpg */,
+				15BEBE181AACFA630041077E /* jude_law.jpg */,
+				15BEBE191AACFA630041077E /* justin_timberlake.jpg */,
+				15BEBE1A1AACFA630041077E /* keanu_reeves.jpg */,
+				15BEBE1B1AACFA630041077E /* ken_jeong.jpg */,
+				15BEBE1C1AACFA630041077E /* kevin_spacey.jpg */,
+				15BEBE1D1AACFA630041077E /* leonardo_dicaprio.jpg */,
+				15BEBE1E1AACFA630041077E /* liam_neeson.jpg */,
+				15BEBE1F1AACFA630041077E /* matt_damon.jpg */,
+				15BEBE201AACFA630041077E /* matthew_mcconaughey.jpg */,
+				15BEBE211AACFA630041077E /* morgan_freeman.jpg */,
+				1545D5A01ABE521C00F0897C /* mila_kunis.jpg */,
+				15BEBE221AACFA630041077E /* nicolas_cage.jpg */,
+				15BEBE231AACFA630041077E /* robert_de_niro.jpg */,
+				15BEBE241AACFA630041077E /* robert_downey_jr.jpg */,
+				15BEBE251AACFA630041077E /* robert_pattinson.jpg */,
+				15BEBE261AACFA630041077E /* robin_williams.jpg */,
+				15BEBE271AACFA630041077E /* ryan_gosling.jpg */,
+				15BEBE281AACFA630041077E /* ryan_reynolds.jpg */,
+				15BEBE291AACFA630041077E /* samuel_l._jackson.jpg */,
+				15BEBE2A1AACFA630041077E /* sean_penn.jpg */,
+				15BEBE2B1AACFA630041077E /* steve_carell.jpg */,
+				15BEBE2C1AACFA630041077E /* taylor_lautner.jpg */,
+				15BEBE2D1AACFA630041077E /* tom_cruise.jpg */,
+				15BEBE2E1AACFA630041077E /* tom_hanks.jpg */,
+				15BEBE2F1AACFA630041077E /* will_smith.jpg */,
+				15BEBE301AACFA630041077E /* zac_efron.jpg */,
+			);
+			name = "Artist Pictures";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15CBBBF11AA55E9C007BEA02 /* Starface */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15CBBC151AA55E9D007BEA02 /* Build configuration list for PBXNativeTarget "Starface" */;
+			buildPhases = (
+				15CBBBEE1AA55E9C007BEA02 /* Sources */,
+				15CBBBEF1AA55E9C007BEA02 /* Frameworks */,
+				15CBBBF01AA55E9C007BEA02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Starface;
+			productName = Starface;
+			productReference = 15CBBBF21AA55E9C007BEA02 /* Starface.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15CBBBEA1AA55E9C007BEA02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = starface;
+				TargetAttributes = {
+					15CBBBF11AA55E9C007BEA02 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = SB4U89V679;
+					};
+				};
+			};
+			buildConfigurationList = 15CBBBED1AA55E9C007BEA02 /* Build configuration list for PBXProject "Starface" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15CBBBE91AA55E9C007BEA02;
+			productRefGroup = 15CBBBF31AA55E9C007BEA02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15CBBBF11AA55E9C007BEA02 /* Starface */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15CBBBF01AA55E9C007BEA02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15F436391ABD57DD00BF48E9 /* halle_berry.jpg in Resources */,
+				15BEBE411AACFA630041077E /* daniel_day-lewis.jpg in Resources */,
+				15BEBE7B1AAD68C70041077E /* button women on.png in Resources */,
+				15BEBE7A1AAD68C70041077E /* button men on.png in Resources */,
+				15F4360A1ABD57DD00BF48E9 /* adrien_brody.jpg in Resources */,
+				15F4365F1ABD57DD00BF48E9 /* liam_neeson.jpg in Resources */,
+				15BEBE671AACFA630041077E /* robin_williams.jpg in Resources */,
+				15BEBE3B1AACFA630041077E /* bruce_willis.jpg in Resources */,
+				15BEBE4F1AACFA630041077E /* jamie_foxx.jpg in Resources */,
+				15F436481ABD57DD00BF48E9 /* jessica_alba.jpg in Resources */,
+				15BEBE3C1AACFA630041077E /* channing_tatum.jpg in Resources */,
+				15BEBE361AACFA630041077E /* benedict_cumberbatch.jpg in Resources */,
+				15BEBE491AACFA630041077E /* george_clooney.jpg in Resources */,
+				15F436731ABD57DD00BF48E9 /* robert_downey_jr.jpg in Resources */,
+				15F4366E1ABD57DD00BF48E9 /* nicole_kidman.jpg in Resources */,
+				15F4364C1ABD57DD00BF48E9 /* jodie_foster.jpg in Resources */,
+				15F4364D1ABD57DD00BF48E9 /* john_malkovich.jpg in Resources */,
+				15F436551ABD57DD00BF48E9 /* katherine_heigl.jpg in Resources */,
+				15BEBE4D1AACFA630041077E /* jack_nicholson.jpg in Resources */,
+				15F436231ABD57DD00BF48E9 /* christina_ricci.jpg in Resources */,
+				15F436641ABD57DD00BF48E9 /* matthew_mcconaughey.jpg in Resources */,
+				15F436361ABD57DD00BF48E9 /* george_clooney.jpg in Resources */,
+				15BEBE6B1AACFA630041077E /* sean_penn.jpg in Resources */,
+				15F436301ABD57DD00BF48E9 /* emma_stone.jpg in Resources */,
+				15BEBE4E1AACFA630041077E /* jackie_chan.jpg in Resources */,
+				15F4367C1ABD57DD00BF48E9 /* scarlett_johansson.jpg in Resources */,
+				15BEBE6C1AACFA630041077E /* steve_carell.jpg in Resources */,
+				15BEBE451AACFA630041077E /* eddie_murphy.jpg in Resources */,
+				15BEBE561AACFA630041077E /* john_malkovich.jpg in Resources */,
+				15F436351ABD57DD00BF48E9 /* gary_oldman.jpg in Resources */,
+				15BEBE641AACFA630041077E /* robert_de_niro.jpg in Resources */,
+				15F436441ABD57DD00BF48E9 /* jean_dujardin.jpg in Resources */,
+				15F436751ABD57DD00BF48E9 /* robin_williams.jpg in Resources */,
+				15BEBE6A1AACFA630041077E /* samuel_l._jackson.jpg in Resources */,
+				15F436881ABD57DD00BF48E9 /* zooey_deschanel.jpg in Resources */,
+				15F436471ABD57DD00BF48E9 /* jennifer_lawrence.jpg in Resources */,
+				15BEBE521AACFA630041077E /* jeff_bridges.jpg in Resources */,
+				15F436201ABD57DD00BF48E9 /* charlize_theron.jpg in Resources */,
+				15BEBE401AACFA630041077E /* colin_firth.jpg in Resources */,
+				15BEBE5C1AACFA630041077E /* ken_jeong.jpg in Resources */,
+				15F436711ABD57DD00BF48E9 /* reese_witherspoon.jpg in Resources */,
+				15F436691ABD57DD00BF48E9 /* mindy_kaling.jpg in Resources */,
+				15F4366A1ABD57DD00BF48E9 /* morgan_freeman.jpg in Resources */,
+				15F4364B1ABD57DD00BF48E9 /* joaquin_phoenix.jpg in Resources */,
+				15BEBE771AAD64AE0041077E /* starface.png in Resources */,
+				15F435891ABD367600BF48E9 /* starface-mobile-women.sqlite3 in Resources */,
+				15F4364A1ABD57DD00BF48E9 /* jim_carrey.jpg in Resources */,
+				15F4358A1ABD367600BF48E9 /* starface-mobile-men.sqlite3 in Resources */,
+				15F436841ABD57DD00BF48E9 /* uma_thurman.jpg in Resources */,
+				15BEBE461AACFA630041077E /* edward_norton.jpg in Resources */,
+				15F4361A1ABD57DD00BF48E9 /* bruce_willis.jpg in Resources */,
+				15F436461ABD57DD00BF48E9 /* jennifer_aniston.jpg in Resources */,
+				15F436191ABD57DD00BF48E9 /* brittany_murphy.jpg in Resources */,
+				15F4366D1ABD57DD00BF48E9 /* nicolas_cage.jpg in Resources */,
+				15F4367A1ABD57DD00BF48E9 /* samuel_l.jpg in Resources */,
+				15F436771ABD57DD00BF48E9 /* ryan_gosling.jpg in Resources */,
+				15CBBC011AA55E9C007BEA02 /* Main.storyboard in Resources */,
+				15F436411ABD57DD00BF48E9 /* jackie_chan.jpg in Resources */,
+				15F4363A1ABD57DD00BF48E9 /* harrison_ford.jpg in Resources */,
+				15BEBE431AACFA630041077E /* dev_patel.jpg in Resources */,
+				15CBBC061AA55E9C007BEA02 /* LaunchScreen.xib in Resources */,
+				15F4367B1ABD57DD00BF48E9 /* sandra_bullock.jpg in Resources */,
+				15BEBE5A1AACFA630041077E /* justin_timberlake.jpg in Resources */,
+				15F4360B1ABD57DD00BF48E9 /* al_pacino.jpg in Resources */,
+				15F4363C1ABD57DD00BF48E9 /* helen_hunt.jpg in Resources */,
+				15BEBE351AACFA630041077E /* ben_affleck.jpg in Resources */,
+				15BEBE381AACFA630041077E /* bill_murray.jpg in Resources */,
+				15F436811ABD57DD00BF48E9 /* taylor_lautner.jpg in Resources */,
+				15F4360E1ABD57DD00BF48E9 /* angelina_jolie.jpg in Resources */,
+				15BEBE651AACFA630041077E /* robert_downey_jr.jpg in Resources */,
+				15F436451ABD57DD00BF48E9 /* jeff_bridges.jpg in Resources */,
+				15F436671ABD57DD00BF48E9 /* michelle_williams.jpg in Resources */,
+				15F4361B1ABD57DD00BF48E9 /* cameron_diaz.jpg in Resources */,
+				15BEBE3E1AACFA630041077E /* christoph_waltz.jpg in Resources */,
+				15F4364E1ABD57DD00BF48E9 /* johnny_depp.jpg in Resources */,
+				15BEBE591AACFA630041077E /* jude_law.jpg in Resources */,
+				15F436101ABD57DD00BF48E9 /* anne_hathaway.jpg in Resources */,
+				15F436331ABD57DD00BF48E9 /* evan_rachel_wood.jpg in Resources */,
+				15BEBE321AACFA630041077E /* al_pacino.jpg in Resources */,
+				15BEBE711AACFA630041077E /* zac_efron.jpg in Resources */,
+				15F436131ABD57DD00BF48E9 /* ben_affleck.jpg in Resources */,
+				15F436211ABD57DD00BF48E9 /* chloe_grace_moretz.jpg in Resources */,
+				15BEBE441AACFA630041077E /* dustin_hoffman.jpg in Resources */,
+				15F436631ABD57DD00BF48E9 /* matt_damon.jpg in Resources */,
+				15F436491ABD57DD00BF48E9 /* jet_li.jpg in Resources */,
+				15F4367F1ABD57DD00BF48E9 /* sigourney_weaver.jpg in Resources */,
+				15BEBE511AACFA630041077E /* jean_dujardin.jpg in Resources */,
+				15F4361D1ABD57DD00BF48E9 /* cate_blanchett.jpg in Resources */,
+				15F4361F1ABD57DD00BF48E9 /* channing_tatum.jpg in Resources */,
+				15F4361C1ABD57DD00BF48E9 /* carey_mulligan.jpg in Resources */,
+				15BEBE4A1AACFA630041077E /* harrison_ford.jpg in Resources */,
+				15BEBE5E1AACFA630041077E /* leonardo_dicaprio.jpg in Resources */,
+				15F4365D1ABD57DD00BF48E9 /* laura_linney .jpg in Resources */,
+				15F436171ABD57DD00BF48E9 /* brad_pitt.jpg in Resources */,
+				15F436141ABD57DD00BF48E9 /* benedict_cumberbatch.jpg in Resources */,
+				15F436611ABD57DD00BF48E9 /* lucy_liu.jpg in Resources */,
+				15F436421ABD57DD00BF48E9 /* jamie_foxx.jpg in Resources */,
+				15F435831ABD1E4500BF48E9 /* starface-women.wnid in Resources */,
+				15F436321ABD57DD00BF48E9 /* emma_watson.jpg in Resources */,
+				15F436181ABD57DD00BF48E9 /* bradley_cooper.jpg in Resources */,
+				15F436511ABD57DD00BF48E9 /* julia_roberts.jpg in Resources */,
+				15F4363D1ABD57DD00BF48E9 /* helena_bonham_carter.jpg in Resources */,
+				15BEBE5B1AACFA630041077E /* keanu_reeves.jpg in Resources */,
+				15BEBE631AACFA630041077E /* nicolas_cage.jpg in Resources */,
+				15F4362B1ABD57DD00BF48E9 /* dev_patel.jpg in Resources */,
+				15F436501ABD57DD00BF48E9 /* jude_law.jpg in Resources */,
+				15BEBE5D1AACFA630041077E /* kevin_spacey.jpg in Resources */,
+				15F436311ABD57DD00BF48E9 /* emma_thompson.jpg in Resources */,
+				15F436781ABD57DD00BF48E9 /* ryan_reynolds.jpg in Resources */,
+				15F436291ABD57DD00BF48E9 /* demi_moore.jpg in Resources */,
+				15F4362F1ABD57DD00BF48E9 /* edward_norton.jpg in Resources */,
+				15F436591ABD57DD00BF48E9 /* kerry_washington.jpg in Resources */,
+				15F436341ABD57DD00BF48E9 /* forest_whitaker.jpg in Resources */,
+				15F436371ABD57DD00BF48E9 /* glenn_close.jpg in Resources */,
+				15F4367E1ABD57DD00BF48E9 /* sharon_stone.jpg in Resources */,
+				15F436741ABD57DD00BF48E9 /* robert_pattinson.jpg in Resources */,
+				15F436121ABD57DD00BF48E9 /* ashton_kutcher.jpg in Resources */,
+				15BEBE4C1AACFA630041077E /* hugh_jackman.jpg in Resources */,
+				15BEBE391AACFA630041077E /* brad_pitt.jpg in Resources */,
+				15F436801ABD57DD00BF48E9 /* steve_carell.jpg in Resources */,
+				15F436621ABD57DD00BF48E9 /* marion_cotillard.jpg in Resources */,
+				15BEBE601AACFA630041077E /* matt_damon.jpg in Resources */,
+				15BEBE311AACFA630041077E /* adrien_brody.jpg in Resources */,
+				15F436661ABD57DD00BF48E9 /* michelle_pfeiffer.jpg in Resources */,
+				15F436111ABD57DD00BF48E9 /* anthony_hopkins.jpg in Resources */,
+				15BEBE621AACFA630041077E /* morgan_freeman.jpg in Resources */,
+				15F436151ABD57DD00BF48E9 /* benicio_del_toro.jpg in Resources */,
+				15BEBE371AACFA630041077E /* benicio_del_toro.jpg in Resources */,
+				15F436571ABD57DD00BF48E9 /* keira_knightley.jpg in Resources */,
+				15F4361E1ABD57DD00BF48E9 /* catherine_zeta-jones.jpg in Resources */,
+				15F4363B1ABD57DD00BF48E9 /* heath_ledger.jpg in Resources */,
+				15F436601ABD57DD00BF48E9 /* liv_tyler.jpg in Resources */,
+				15F436681ABD57DD00BF48E9 /* mila_kunis.jpg in Resources */,
+				15F4366B1ABD57DD00BF48E9 /* naomi_watts.jpg in Resources */,
+				15BEBE421AACFA630041077E /* denzel_washington.jpg in Resources */,
+				15F4365B1ABD57DD00BF48E9 /* kirsten_dunst.jpg in Resources */,
+				15F436251ABD57DD00BF48E9 /* clint_eastwood.jpg in Resources */,
+				15F436791ABD57DD00BF48E9 /* samuel_l._jackson.jpg in Resources */,
+				15F4364F1ABD57DD00BF48E9 /* joseph_gordon-levitt.jpg in Resources */,
+				15CBBC031AA55E9C007BEA02 /* Images.xcassets in Resources */,
+				15F4366F1ABD57DD00BF48E9 /* penelope_cruz.jpg in Resources */,
+				15BEBE3A1AACFA630041077E /* bradley_cooper.jpg in Resources */,
+				15BEBE681AACFA630041077E /* ryan_gosling.jpg in Resources */,
+				15BEBE3F1AACFA630041077E /* clint_eastwood.png in Resources */,
+				15BEBE3D1AACFA630041077E /* christian_bale.jpg in Resources */,
+				15F436221ABD57DD00BF48E9 /* christian_bale.jpg in Resources */,
+				15F436431ABD57DD00BF48E9 /* javier_bardem.jpg in Resources */,
+				15F4362D1ABD57DD00BF48E9 /* dustin_hoffman.jpg in Resources */,
+				15F436261ABD57DD00BF48E9 /* clint_eastwood.png in Resources */,
+				15F4362E1ABD57DD00BF48E9 /* eddie_murphy.jpg in Resources */,
+				15F4360D1ABD57DD00BF48E9 /* amy_adams.jpg in Resources */,
+				15F4363F1ABD57DD00BF48E9 /* hugh_jackman.jpg in Resources */,
+				15F436851ABD57DD00BF48E9 /* will_smith.jpg in Resources */,
+				15BEBE581AACFA630041077E /* joseph_gordon-levitt.jpg in Resources */,
+				15F436241ABD57DD00BF48E9 /* christoph_waltz.jpg in Resources */,
+				15F4362A1ABD57DD00BF48E9 /* denzel_washington.jpg in Resources */,
+				15F4362C1ABD57DD00BF48E9 /* drew_barrymore.jpg in Resources */,
+				15F436271ABD57DD00BF48E9 /* colin_firth.jpg in Resources */,
+				15F436721ABD57DD00BF48E9 /* robert_de_niro.jpg in Resources */,
+				15F436701ABD57DD00BF48E9 /* rachel_mcadams.jpg in Resources */,
+				1527CB081ABE98760040BA78 /* daniel_day-lewis.jpg in Resources */,
+				15FF50921AAFFD2F0039A3B6 /* Media.xcassets in Resources */,
+				15F436861ABD57DD00BF48E9 /* winona_ryder.jpg in Resources */,
+				15BEBE691AACFA630041077E /* ryan_reynolds.jpg in Resources */,
+				15F4365A1ABD57DD00BF48E9 /* kevin_spacey.jpg in Resources */,
+				15F436401ABD57DD00BF48E9 /* jack_nicholson.jpg in Resources */,
+				15F436821ABD57DD00BF48E9 /* tom_cruise.jpg in Resources */,
+				15F436161ABD57DD00BF48E9 /* bill_murray.jpg in Resources */,
+				15BEBE331AACFA630041077E /* anthony_hopkins.jpg in Resources */,
+				15BEBE661AACFA630041077E /* robert_pattinson.jpg in Resources */,
+				15F436531ABD57DD00BF48E9 /* justin_timberlake.jpg in Resources */,
+				1545D59F1ABE521400F0897C /* milla_jovovich.jpg in Resources */,
+				15BEBE701AACFA630041077E /* will_smith.jpg in Resources */,
+				15BEBE611AACFA630041077E /* matthew_mcconaughey.jpg in Resources */,
+				15F4365E1ABD57DD00BF48E9 /* leonardo_dicaprio.jpg in Resources */,
+				15F436581ABD57DD00BF48E9 /* ken_jeong.jpg in Resources */,
+				15F436831ABD57DD00BF48E9 /* tom_hanks.jpg in Resources */,
+				15BEBE501AACFA630041077E /* javier_bardem.jpg in Resources */,
+				15F436521ABD57DD00BF48E9 /* julianne_moore.jpg in Resources */,
+				15BEBE471AACFA630041077E /* forest_whitaker.jpg in Resources */,
+				15F436651ABD57DD00BF48E9 /* meryl_streep.jpg in Resources */,
+				15F436761ABD57DD00BF48E9 /* rosario_dawson.jpg in Resources */,
+				15F4365C1ABD57DD00BF48E9 /* kristen_stewart.jpg in Resources */,
+				15BEBE4B1AACFA630041077E /* heath_ledger.jpg in Resources */,
+				15BEBE6E1AACFA630041077E /* tom_cruise.jpg in Resources */,
+				15F4367D1ABD57DD00BF48E9 /* sean_penn.jpg in Resources */,
+				15BEBE571AACFA630041077E /* johnny_depp.jpg in Resources */,
+				15F4363E1ABD57DD00BF48E9 /* hilary_swank.jpg in Resources */,
+				15F4360F1ABD57DD00BF48E9 /* anna_kendrick.jpg in Resources */,
+				15F4366C1ABD57DD00BF48E9 /* natalie_portman.jpg in Resources */,
+				15F436871ABD57DD00BF48E9 /* zac_efron.jpg in Resources */,
+				15BEBE6D1AACFA630041077E /* taylor_lautner.jpg in Resources */,
+				15BEBE341AACFA630041077E /* ashton_kutcher.jpg in Resources */,
+				15BEBE731AAD5E3C0041077E /* switch-camera.png in Resources */,
+				15BEBE481AACFA630041077E /* gary_oldman.jpg in Resources */,
+				15F436561ABD57DD00BF48E9 /* keanu_reeves.jpg in Resources */,
+				15F436381ABD57DD00BF48E9 /* gwyneth_paltrow.jpg in Resources */,
+				1545D5A11ABE521C00F0897C /* mila_kunis.jpg in Resources */,
+				15BEBE551AACFA630041077E /* joaquin_phoenix.jpg in Resources */,
+				15F436541ABD57DD00BF48E9 /* kate_winslet.jpg in Resources */,
+				15F435861ABD1E8C00BF48E9 /* starface-men.wnid in Resources */,
+				15BEBE541AACFA630041077E /* jim_carrey.jpg in Resources */,
+				15BEBE5F1AACFA630041077E /* liam_neeson.jpg in Resources */,
+				15BEBE531AACFA630041077E /* jet_li.jpg in Resources */,
+				15F4360C1ABD57DD00BF48E9 /* amanda_seyfried.jpg in Resources */,
+				15BEBE6F1AACFA630041077E /* tom_hanks.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15CBBBEE1AA55E9C007BEA02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15CBBC6F1AA669CA007BEA02 /* ccv_sift.c in Sources */,
+				15CDDE651AABC0C700B307AF /* PhotoViewController.m in Sources */,
+				15CBBC651AA669CA007BEA02 /* ccv_convnet.c in Sources */,
+				1516F5A31AA66B1E00C70341 /* dSFMT.c in Sources */,
+				15CBBC6B1AA669CA007BEA02 /* ccv_memory.c in Sources */,
+				15CBBC681AA669CA007BEA02 /* ccv_ferns.c in Sources */,
+				15CBBC621AA669CA007BEA02 /* ccv_bbf.c in Sources */,
+				1516F5C81AA66B4200C70341 /* kissf_fftndr.c in Sources */,
+				15CBBC661AA669CA007BEA02 /* ccv_daisy.c in Sources */,
+				1516F5C41AA66B4200C70341 /* kiss_fftndr.c in Sources */,
+				15CBBC321AA6647F007BEA02 /* ConvnetClassifier.m in Sources */,
+				1516F5CA1AA66B4200C70341 /* SFMT.c in Sources */,
+				1516F5C61AA66B4200C70341 /* kissf_fft.c in Sources */,
+				1516F5CB1AA66B4200C70341 /* sha1.c in Sources */,
+				1516F5C31AA66B4200C70341 /* kiss_fftnd.c in Sources */,
+				1516F5C21AA66B4200C70341 /* kiss_fft.c in Sources */,
+				1516F5C51AA66B4200C70341 /* kiss_fftr.c in Sources */,
+				1516F5DC1AA6D08F00C70341 /* ArtistsData.m in Sources */,
+				15CBBC691AA669CA007BEA02 /* ccv_icf.c in Sources */,
+				15CBBC721AA669CA007BEA02 /* ccv_tld.c in Sources */,
+				1516F5C71AA66B4200C70341 /* kissf_fftnd.c in Sources */,
+				15CBBC641AA669CA007BEA02 /* ccv_classic.c in Sources */,
+				15CBBC611AA669CA007BEA02 /* ccv_basic.c in Sources */,
+				15CBBC6A1AA669CA007BEA02 /* ccv_io.c in Sources */,
+				1516F5C91AA66B4200C70341 /* kissf_fftr.c in Sources */,
+				15CBBC6C1AA669CA007BEA02 /* ccv_mser.c in Sources */,
+				15CBBC6E1AA669CA007BEA02 /* ccv_resample.c in Sources */,
+				15CBBC671AA669CA007BEA02 /* ccv_dpm.c in Sources */,
+				15CBBC631AA669CA007BEA02 /* ccv_cache.c in Sources */,
+				15CBBC701AA669CA007BEA02 /* ccv_sparse_coding.c in Sources */,
+				15CBBBFE1AA55E9C007BEA02 /* ViewController.m in Sources */,
+				15CBBC6D1AA669CA007BEA02 /* ccv_numeric.c in Sources */,
+				15CBBC601AA669CA007BEA02 /* ccv_algebra.c in Sources */,
+				15CBBC741AA669CA007BEA02 /* ccv_util.c in Sources */,
+				15CBBC711AA669CA007BEA02 /* ccv_swt.c in Sources */,
+				15CBBBFB1AA55E9C007BEA02 /* AppDelegate.m in Sources */,
+				15CBBBF81AA55E9C007BEA02 /* main.m in Sources */,
+				15CBBC731AA669CA007BEA02 /* ccv_transform.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		15CBBBFF1AA55E9C007BEA02 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15CBBC001AA55E9C007BEA02 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		15CBBC041AA55E9C007BEA02 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15CBBC051AA55E9C007BEA02 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15CBBC131AA55E9D007BEA02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		15CBBC141AA55E9D007BEA02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				"OTHER_CFLAGS[arch=*]" = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15CBBC161AA55E9D007BEA02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Starface/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "";
+				"OTHER_CFLAGS[arch=*]" = (
+					"-D",
+					HAVE_DISPATCH,
+					"-D",
+					HAVE_ACCELERATE_FRAMEWORK,
+					"-ffast-math",
+					"-O3",
+					"-D",
+					HAVE_NEON,
+				);
+				PRODUCT_NAME = Starface;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		15CBBC171AA55E9D007BEA02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Starface/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "";
+				"OTHER_CFLAGS[arch=*]" = (
+					"-D",
+					USE_DISPATCH,
+					"-D",
+					HAVE_ACCELERATE_FRAMEWORK,
+					"-ffast-math",
+					"-O3",
+					"-D",
+					HAVE_NEON,
+				);
+				PRODUCT_NAME = Starface;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15CBBBED1AA55E9C007BEA02 /* Build configuration list for PBXProject "Starface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15CBBC131AA55E9D007BEA02 /* Debug */,
+				15CBBC141AA55E9D007BEA02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15CBBC151AA55E9D007BEA02 /* Build configuration list for PBXNativeTarget "Starface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15CBBC161AA55E9D007BEA02 /* Debug */,
+				15CBBC171AA55E9D007BEA02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15CBBBEA1AA55E9C007BEA02 /* Project object */;
+}
